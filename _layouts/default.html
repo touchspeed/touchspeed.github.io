@@ -1,18 +1,30 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
-<html lang="en" >
-    <head>
-        <meta charset="utf-8">
-        <title>
-            {% if post.title %}{{ post.title }}
-                •
-            {% else %}
-            {% endif %}{{ site.title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
-    </head>
-    <body>
+<html>
+<head>
+  {% include head.html %}
+</head>
+
+<!-- bare layout means not header and footer
+  like resume
+-->
+{% unless layout.bare %}
+  <body>
+    {% include header.html %}
+
+    <section id="l-main">
+      <div class="container">
+        {% include search_result.html %}
         {{ content }}
-    </body>
+      </div>
+    </section>
+
+    {% include footer.html %}
+  </body>
+{% else %}
+  {{ content }}
+{% endunless %}
+
 </html>
