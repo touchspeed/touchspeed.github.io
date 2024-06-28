@@ -1,1 +1,246 @@
-<!DOCTYPE html> <html> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="description" content="Some short description on your site"> <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Meve&apos;s blog" /> <!-- Begin Jekyll SEO tag v2.8.0 --> <title>Meve’s blog | Some short description on your site</title> <meta name="generator" content="Jekyll v4.3.3" /> <meta property="og:title" content="Meve’s blog" /> <meta property="og:locale" content="en_US" /> <meta name="description" content="Some short description on your site" /> <meta property="og:description" content="Some short description on your site" /> <link rel="canonical" href="http://localhost:4000/404.html" /> <meta property="og:url" content="http://localhost:4000/404.html" /> <meta property="og:site_name" content="Meve’s blog" /> <meta property="og:type" content="website" /> <meta name="twitter:card" content="summary" /> <meta property="twitter:title" content="Meve’s blog" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","description":"Some short description on your site","headline":"Meve’s blog","url":"http://localhost:4000/404.html"}</script> <!-- End Jekyll SEO tag --> <link rel="shortcut icon" href="/favicon.ico" type="image/icon"> <link rel="icon" href="/favicon.ico" type="image/icon"> <!-- stylesheets --> <link rel="stylesheet" type="text/css" href="/assets/css/base.css"> <link rel="stylesheet" type="text/css" href="/assets/css/simplePagination.css"> <!-- javascripts --> <script type="text/javascript" src="/assets/js/jquery.js"></script> <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> <!--[if lt IE 9]> <script src="/assets/js/html5shiv.js"></script> <![endif]--> </head> <!-- bare layout means not header and footer like resume --> <body> <header id="l-header"> <div class="container"> <div class="row logo"> <div class="col-lg-7"> <h1>meve</h1> </div> <div class="col-lg-5"> <p>No1...</p> <p>No2...</p> </div> </div> <div class="row navicon"> <a href=""><i class="fa fa-navicon"></i></a> </div> <div class="row navbar"> <nav class="col-lg-8 col-md-8 col-xs-12"> <ul class="row"> <li class="col-lg-3"><a href="/">HOME</a></li> <li class="col-lg-3"> <ul class="subnav"> <a href="javascript:void(0)">POST</a> <li><a href="/category">CATEGORY</a></li> <li><a href="/tag">TAG</a></li> </ul> </li> <li class="col-lg-3"><a href="/series">SERIES</a></li> <li class="col-lg-3"><a href="/about">ABOUT</a></li> </ul> </nav> <div class="search col-lg-4 col-md-4 col-xs-12"> <form> <label for="search"></label> <input id="search-input" name="serach" type="text" placeholder="Search Blog Posts..."> <i class="fa fa-search"></i> </form> </div> </div> </div> </header> <section id="l-main"> <div class="container"> <div id="search-result-wrapper" class="hidden"> <h3>Search Results:</h3> <div id="search-result"></div> </div> <style> #search-result-wrapper { font-size: 2rem; background-color: #eee; padding: 5rem; padding-left: 31rem; margin-top: 1rem; margin-bottom: 1rem; box-shadow: 0 0 10px #999; border-radius: 5px; background: white; } #search-result { padding-left: 3rem; } @media (max-width: 1200px) { #search-result-wrapper { font-size: 1.7rem; padding: 2rem; } #search-result { padding-left: 1rem; } } @media (max-width: 768px) { #search-result-wrapper { margin-top: 24rem !important; } } </style> <script> $(document).ready(function() { input = $("#search-input"); wrapper = $("#search-result-wrapper"); wrapper.hide(); wrapper.removeClass("hidden"); input.on("keyup change", function() { if (! input.val()) { wrapper.slideUp("ease"); } else { wrapper.slideDown("ease"); } }); }); </script> <script src="/assets/js/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-result'), json: "/search.json" }); </script> <div id="whoops"> <h1>Whoops! 404</h1> <h2>I suggest you <a href="/"> go sweet <i class="fa fa-home"></i></a></h2> </div> </div> </section> <footer id="l-footer"> <div class="container"> <div class="row"> <div id="social" class="col-lg-5 col-md-5 col-sm-12"> <h3>SOCIAL</h3> <ul> <li> <i class="fa fa-github-square" title="GitHub"></i> <a href="https://github.com">&nbsp;&nbsp;https://github.com</a> </li> </ul> </div> <div id="contact" class="col-lg-4 col-md-4 col-sm-12"> <h3>CONTACT</h3> <ul> <li> <i class="fa fa-phone-square" title="Mobile"></i> <a href="tel: 123 4567 8010">&nbsp;&nbsp;123 4567 8910</a> </li> <li> <i class="fa fa-envelope" title="Email"></i> <a href="mailto: example@example.com">&nbsp;&nbsp;example@example.com</a> </li> </ul> </div> <div id="rss" class="col-lg-3 col-md-3 col-sm-12"> <h3>SUBSCRIBE</h3> <a href="/feed.xml"> <i class="rss fa fa-rss-square"></i> </a> </div> </div> <p id="legal"> Copyright (c) 2024 YOUR NAME | Powered by <a href="http://jekyllrb.com">Jekyll</a> &amp; <a href="http://github.com">GitHub</a> | designed &amp; build by <a href="http://unifreak.github.io">UniFreak</a><br /> The blog posts on this site are licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. </p> </div> </footer> <script type="text/javascript" src="/assets/js/base.js"></script> <!-- Global site tag (gtag.js) - Google Analytics --> <div id="search-result-wrapper" class="hidden"> <h3>Search Results:</h3> <div id="search-result"></div> </div> <style> #search-result-wrapper { font-size: 2rem; background-color: #eee; padding: 5rem; padding-left: 31rem; margin-top: 1rem; margin-bottom: 1rem; box-shadow: 0 0 10px #999; border-radius: 5px; background: white; } #search-result { padding-left: 3rem; } @media (max-width: 1200px) { #search-result-wrapper { font-size: 1.7rem; padding: 2rem; } #search-result { padding-left: 1rem; } } @media (max-width: 768px) { #search-result-wrapper { margin-top: 24rem !important; } } </style> <script> $(document).ready(function() { input = $("#search-input"); wrapper = $("#search-result-wrapper"); wrapper.hide(); wrapper.removeClass("hidden"); input.on("keyup change", function() { if (! input.val()) { wrapper.slideUp("ease"); } else { wrapper.slideDown("ease"); } }); }); </script> <script src="/assets/js/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-result'), json: "/search.json" }); </script> </body> </html>
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="https://gmpg.org/xfn/11" rel="profile" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+  <title>
+    
+      404: Page not found &middot; Hydeout
+    
+  </title>
+
+  
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/hydeout/assets/css/main.css" />
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/hydeout/favicon.png" />
+<link rel="shortcut icon" href="/hydeout/favicon.ico" />
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/hydeout/feed.xml" />
+
+  <!-- Additional head bits without overriding original head -->
+</head>
+
+
+  <body class="default">
+
+    <div id="sidebar">
+  <header>
+    <div class="site-title">
+      <a href="/hydeout/">
+        
+          <span class="back-arrow icon"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0h24v24H0z" fill="none"/>
+  <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+</svg></span>
+        
+        Hydeout
+      </a>
+    </div>
+    <p class="lead">The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.</p>
+  </header>
+  <nav id="sidebar-nav-links">
+  
+    <a class="home-link "
+        href="/hydeout/">Home</a>
+  
+  
+
+  
+
+  
+
+
+  
+    
+  
+
+  
+    
+      <a class="page-link "
+          href="/hydeout/about.html">About</a>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+  
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+      <a class="category-link "
+          href="/hydeout/category/edge-case.html">Edge Case</a>
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <a class="category-link "
+          href="/hydeout/category/markup.html">Markup</a>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+  <!-- Optional additional links to insert in sidebar nav -->
+</nav>
+
+
+  
+
+  <nav id="sidebar-icon-links">
+  
+
+  <a id="subscribe-link"
+     class="icon" title="Subscribe" aria-label="Subscribe"
+     href="/hydeout/feed.xml">
+    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <circle cx="6.18" cy="17.82" r="2.18"/>
+    <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/>
+</svg>
+  </a>
+
+  
+  
+  
+  
+
+  
+    <a id="tags-link"
+       class="icon"
+       title="Tags" aria-label="Tags"
+       href="/hydeout/tags.html">
+      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+    </a>
+  
+
+  
+    <a id="search-link"
+       class="icon"
+       title="Search" aria-label="Search"
+       href="/hydeout/search.html">
+      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+    </a>
+  
+
+  <!-- Optional additional links to insert for icons links -->
+</nav>
+
+  <p>
+  &copy; 2024.
+  <a href="/hydeout/LICENSE.md">MIT License.</a>
+</p>
+
+</div>
+
+    <main class="container">
+      <div class="page">
+  <h1 class="page-title">404: Page not found</h1>
+  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="/hydeout/">Head back home</a> to try finding it again.</p>
+</div>
+
+    </main>
+
+    <!-- Optional footer content -->
+
+  </body>
+</html>

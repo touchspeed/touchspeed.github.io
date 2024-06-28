@@ -1,126 +1,168 @@
-# Textalic
+# Hydeout
 
-[![feature_jt](https://img.shields.io/badge/featured%20on-JT-red.svg)](https://jekyll-themes.com)
+Hydeout updates the original [Hyde](https://github.com/poole/hyde)
+theme for [Jekyll](http://jekyllrb.com) 3.x and 4.x and adds new functionality.
 
-![mockup](./assets/img/mockup.png)
+![Desktop](/_screenshots/1.png?raw=true)
+<img alt="Mobile home page" src="/_screenshots/2.png?raw=true" width="300px" />
+<img alt="Mobile post page" src="/_screenshots/3.png?raw=true" width="300px" />
 
-**Textalic** is a simple, responsive jekyll theme focus on blogging. Here is
-a [live demo](https://unifreak.github.io/jekyll-theme-textalic/).
+### Usage
 
-## Features
+Hydeout is available as the `jekyll-theme-hydeout` Ruby Gem.
+Add `gem "jekyll-theme-hydeout", "~> 4.1"` to your Gemfile and run
+`bundle install`.
 
-- Post category, tag and series
-- Github flavored markdown rendering
-- LaTeX and ascii math notation rendering
-- Disqus comment and Gitalk comment
-- Fulltext search (powered by [jekyll-simple-search plugin](https://github.com/christian-fei/Simple-Jekyll-Search))
-- Code highlighting
-- Autogenerate table of content
-- Google analytics
-- Atom feed
-- Sitemap
+If you're installing on Github pages, you may also have to add
+`remote_theme: fongandrew/hydeout` to your `_config.yml`. [See the Github
+instructions for more details.](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/)
 
-## Install & Configuration
-
-### Set up jekyll
-
-Make sure you have set up jekyll correctly. See [the official jekyll doc](https://jekyllrb.com/docs/).
-
-### Clone this repo
-
-Clone this repo into to your local machine, then `cd` to the root directory of
-your local copy. Here is an overview of the project's file structure:
-
-```console
-jekyll-theme-textalic
-├── 404.html                    # 404 page
-├── Gemfile
-├── LICENCE
-├── _config.yml                 # Main config
-├── _data
-│   └── me.yml                  # Personal info config
-├── _demo_series                # A demo series, add series into series folder
-│   └── demo_series_post_1.md
-├── _includes
-├── _layouts
-├── _posts
-│   └── 2019-12-25-Intro.md     # Add new post here
-├── _sass
-├── about                       # About page
-├── assets                      # images, fonts, css, js...
-│   ├── img
-│   │   ├── me.png              # Replace with your own, showed in /about page
-├── favicon.ico                 # Replace with your own
-├── feed.xml
-├── index.html
-├── resume
-│   └── index.md                # You may write your resume here. linked in /about page
-├── search.json
-├── series
-└── tag
-```
-
-### Install gems
-
-Run the following command to install required gems defined in `Gemfile`:
+Hydeout uses pagination, so if you have an `index.md`, you'll need to swap
+it with an `index.html` that uses the `index` layout:
 
 ```
-$ bundle install
+---
+layout: index
+title: Home
+---
 ```
+
+You'll also need to add a setting to `_config.yml` telling Jekyll how many posts
+to include per page (e.g. `paginate: 5`).
+
+### Keep It Simple
+
+In keeping with the original Hyde theme, Hydeout aims to keep the overall
+design lightweight and plugin-free. JavaScript is currently limited only
+to Disqus and Google Analytics (and is only loaded if you provide configuration
+variables).
+
+Hydeout makes heavy use of Flexbox in its CSS. If Flexbox is not available,
+the CSS degrades into a single column layout.
 
 ### Customization
 
-Edit `_config.yml` and `_data/me.yml` to tweek the site configuration to your
-need. See corresponding comments in these files for details.
+Hydeout replaces Hyde's class-based theming with the use
+of the following SASS variables:
 
-You also should replace the `/favicon.ico` and `/assets/img/me.png` file with
-your own.
+```scss
+$sidebar-bg-color: #202020 !default;
+$sidebar-fg-color: white !default;
+$sidebar-sticky: true !default;
+$layout-reverse: false !default;
+$link-color: #268bd2 !default;
+```
 
-### Run locally
+To override these variables, create your own `assets/css/main.scss` file.
+Define your own variables, then import in Hydeout's SCSS, like so:
 
-Run `bundle exec jekyll serve --watch` to run it locally.
+```scss
+---
+# Jekyll needs front matter for SCSS files
+---
 
-## Blogging
+$sidebar-bg-color: #ac4142;
+$link-color: #ac4142;
+$sidebar-sticky: false;
+@import "hydeout";
+```
 
-You can begin writting your posts under `/_posts` folder.
-See [Jekyll doc on posts](https://jekyllrb.com/docs/posts/).
+See the [_variables](_sass/hydeout/_variables.scss) file for other variables
+you can override.
 
-Posts are automatically grouped under site's post/category and post/tag menu.
+You can see the full set of partials you can replace in the
+[`_includes`](_includes) folder, but there are a few worth noting:
 
-You can define post's category and tags in the post's [front matter](https://jekyllrb.com/docs/front-matter/),
-using `category` and `tags` front matter block.
+* `_includes/copyright.html` - Insert your own copyright here.
 
-## Math Notation Support
+* `_includes/custom-head.html` - Insert custom head tags (e.g. to load your
+  own stylesheets)
 
-You can enable latex math support or asciimath support by adding `usemath: latex`
-or `usemath: ascii` front matter accordingly. Latex math notation must be wrapped
-inside \$\$, and asciimath notation must be wrapped inside \\`.
+* `_includes/custom-foot.html` - Insert custom elements at the end of the
+  body (e.g. for custom JS)
 
-For detail configuration and math rendering result, see <https://unifreak.github.io/jekyll-theme-textalic/demo/Blogging>
+* `_includes/custom-nav-links.html` - Additional nav links to insert at the
+  end of the list of links in the sidebar.
 
-### Series
+  Pro-tip: The `nav`s in the sidebar are flexboxes. Use the `order` property
+  to order your links.
 
-Series are implemented using [Jekyll's collections](https://jekyllrb.com/docs/collections/).
-To add new series, follow these steps:
+* `_includes/custom-icon-links.html`- Additional icon links to insert at the
+  end of the icon links at the bottom of the sidebar. You can use the `order`
+  property to re-order.
 
-1. Define a new collection in `_config.yml`, under `collections` configuration block:
+* `_includes/favicons.html` - Replace references to `favicon.ico` and
+  `favicon.png` with your own favicons references.
 
-    ```yaml
-    collections:
-      demo_series:
-        output: true
-    ```
+* `_includes/font-includes.html` - The Abril Fatface font used for the site
+  title is loaded here. If you're overriding that font in the CSS, be sure
+  to also remove the font load reference here.
 
-    Note that to make the change to `_config.yml` take effects, you **need to restart jekyll**.
+### New Features
 
-2. Create the series (aka collection) folder `/_demo_series`. Note that the **folder name begin with `_`**.
+* Hydeout adds a new tags page (accessible in the sidebar). Just create a
+  new page with the tags layout:
 
-3. By adding new post under the series folder, you add post under the corresponding series.
+  ```
+  ---
+  layout: tags
+  title: Tags
+  ---
+  ```
 
-## Deployment
+* Hydeout adds a new "category" layout for dedicated category pages.
+  Category pages are automatically added to the sidebar. All other pages
+  must have `sidebar_link: true` in their front matter to show up in
+  the sidebar. To create a category page, use the `category` layout"
 
-See [Jekyll doc on deployment](https://jekyllrb.com/docs/deployment/).
+  ```
+  ---
+  layout: category
+  title: My Category
+  ---
 
-## That's it
+  Description of "My Category"
+  ```
 
-Happy blogging!
+* You can control how pages are sorted by using the `sidebar_sort_order`
+  parameter in the front matter. This works for both category and non-category
+  pages, although non-category pages will always come first. Take a look at
+  [`_includes/sidebar-nav-links.html`](./_includes/sidebar-nav-links.html) if
+  you want to customize this behavior.
+
+  ```
+  ---
+  layout: page
+  title: My page
+  sidebar_sort_order: 123
+  ---
+
+  Some content.
+  ```
+
+* A simple redirect-to-Google search is available. Just create a page with
+  the `search` layout.
+
+  ```
+  ---
+  layout: search
+  title: Google Search
+  ---
+  ```
+
+* Disqus integration is ready out of the box. Just add the following to
+  your config file:
+
+  ```yaml
+  disqus:
+    shortname: my-disqus-shortname
+  ```
+
+  If you don't want Disqus or want to use something else, override
+  `comments.html`.
+
+* For Google Analytics support, define a `google_analytics` variable with
+  your property ID in your config file.
+
+There's also a bunch of minor tweaks and adjustments throughout the
+theme. Hope this works for you!

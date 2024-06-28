@@ -1,59 +1,35 @@
-highlighter: rouge
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
 
-markdown: kramdown
+# Setup
+title:            Hydeout
+tagline:          'A Jekyll theme'
+description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
+url:              https://fongandrew.github.io
+baseurl:          '/hydeout'
+                  # the optional subpath of your site, e.g. "/blog"
+                  # NB: This applies to all pages in your Jekyll site.
+                  # If you want to move just the blog index pages but keep
+                  # other pages at root, see the paginate_path and
+                  # sidebar_blog_link below.
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: 'highlight'
-  math_engine: mathjax
+author:
+  name:           'Andrew Fong'
+  url:            https://twitter.com/fongandrewc
+
+paginate:         5
+# paginate_path:    '/page:num'
+                    # Or '/blog/page:num' if you want to move your index pages
 
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
 
-paginate: 7
-paginate_path: "page:num"
-layout: post
-permalink: /:categories/:title
-excerpt_separator: "[-----]"
-
-url: # Required: replace this with your domain
-name: meve # Required: will be displayed on every page's header
-title: Meve's blog # Required: site's default title
-shout: # Required: **TWO** lines, will be displayed on page's header.
-  - No1...
-  - No2...
-description: "Some short description on your site" # Required
-
-disqus:
-  comments: false # Global toggle on/off disqus comment
-  shortname:  # Required if you use disqus. Replace with your disqus shortname here
-
-gitalk:
-  comments: false # Global toggle on/off gitalk comment
-  # replace all of those below with your own
-  client_id: baeea51800be67550b52
-  client_secret: 4a521ccafa96b8b2b128659c35468bdd7ba5d4aa
-  repo: jekyll-theme-textalic
-  owner: unifreak
-  admin: unifreak
-  distraction_free_mode: true
-
-
-google_analytics:
-  id: "" # Required if you use google analytics. Replace with your tracking id here
-
-collections: # Define post series here
-  demo_series:
-    output: true
-  demo_series_2:
-    output: true
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "post"
+# Sidebar link settings
+sidebar_home_link:  true
+# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
+                                # page. If you change your paginate_path,
+                                # set this to the root of the paginate_path
+                                # to enable a separate blog link.
