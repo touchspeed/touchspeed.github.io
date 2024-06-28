@@ -1,18 +1,44 @@
 ---
 layout: default
+markdown: true
 ---
+<div class="row">
+  <div id="markdown-container" class="col-lg-9">
+    <header>
+      <p id="post-title">{{ page.title | replace: "_", " " | capitalize}}</p>
+      {% if page.tags %}
+      <ul class="tags clearfix">
+        {% for tag in page.tags %}
+        <li><i class="fa fa-tag"></i> {{ tag }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
 
-<header>
-  <h1 class="post-title">{{ page.title }}</h1>
-</header>
-<div class="content">
-  {% include post-meta.html post=page %}
+      <p id="post-meta">
+      posted
+      {% if page.date %}
+         on <b>{{ page.date | date_to_string }}</b>
+      {% endif %}
+      {% if page.categories[0] %}
+        under category <b>{{ page.categories | join: ", " }}</b>
+      {% endif %}
+      {% unless page.collection == 'posts'  %}
+        in series <b>{{ page.collection }}</b>
+      {% endunless %}
+      </p>
+    </header>
 
-  <div class="post-body">
     {{ content }}
-    {% include post-tags.html post=page %}
   </div>
 
-  {% include comments.html %}
-  {% include related_posts.html %}
+  <div id="markdown-outline" class="col-lg-3">
+  </div>
+
+  {% if site.disqus.comments %}
+    {% include disqus.html %}
+  {% endif %}
+
+  {% if site.gitalk.comments %}
+    {% include gitalk.html %}
+  {% endif %}
 </div>

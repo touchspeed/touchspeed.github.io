@@ -1,16 +1,30 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: 'en-us'}}">
-
+<html>
+<head>
   {% include head.html %}
+</head>
 
-  <body class="{{ page.layout }}{% if page.url == '/' %} home{% endif %}">
+<!-- bare layout means not header and footer
+  like resume
+-->
+{% unless layout.bare %}
+  <body>
+    {% include header.html %}
 
-    {% include sidebar.html %}
+    <section id="l-main">
+      <div class="container">
+        {% include search_result.html %}
+        {{ content }}
+      </div>
+    </section>
 
-    <main class="container">
-      {{ content }}
-    </main>
-
-    {% include custom-foot.html %}
+    {% include footer.html %}
   </body>
+{% else %}
+  {{ content }}
+{% endunless %}
+
 </html>
