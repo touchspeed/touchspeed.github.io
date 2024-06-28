@@ -1,0 +1,47 @@
+I"�	<h3 id="前言">前言</h3>
+
+<p>snipaste是我在win上经常用到的一个截图软件，操作方便，贴图功能也很便利。 <br />
+由于现在我更多使用linux，便想寻找一个替代品，而flameshot，则是目前我认为linux上最好用的截图软件。 <br />
+机器系统为Rocky Linux 8.10。 <br /></p>
+
+<h3 id="获取">获取</h3>
+
+<p>从<a href="https://github.com/flameshot-org/flameshot/releases/tag/v12.1.0">这里</a>下载，最新版本停留在12.1.0，这里我选择下载appimage，可执行单文件，当然也可以下载rpm包之后安装到系统(sudo rpm -ivh xxxx.rpm)。 <br />
+<img src="get_flameshot/flameshot_release.png" alt="flameshot_release" /></p>
+
+<h3 id="统一管理便携应用">统一管理便携应用</h3>
+
+<p>将appimage移动到/home/tools/Utilities/ <br />
+mv ./Flameshot-12.1.0.x86_64.AppImage /home/tools/Utilities/ <br /></p>
+
+<p>进入/home/tools/Utilities/文件夹，chmod +x Flameshot-12.1.0.x86_64.AppImage给一下执行权限 <br />
+<img src="get_flameshot/utilities.png" alt="utilities" /></p>
+
+<p>/home/tools/里面都是我存放的一些应用 <br />
+<img src="get_flameshot/home_tools.png" alt="/home/tools/" /></p>
+
+<p>进入/home/tools/bin/ <br />
+<img src="get_flameshot/soft_links.png" alt="soft_links" /></p>
+
+<p>将应用的可执行文件软链接到/home/tools/bin/ <br />
+ln -snf ../Utilities/Flameshot-12.1.0.x86_64.AppImage ./flameshot <br /></p>
+
+<p>在.bashrc中将可执行文件目录导入PATH <br />
+<img src="get_flameshot/tool_path.png" alt="tool_path" /></p>
+
+<p>打开一个新的终端，输入flameshot即可打开软件。<br /></p>
+
+<h3 id="优点">优点</h3>
+
+<p>无需安装，开箱即用，也方便了系统迁移，只要将tools文件夹复制到新机器的/home/下，再在.bashrc中将可执行文件目录导入PATH，就能使用这些软件，当然appimage在不同系统可能还是会遇到某些依赖问题。 <br /></p>
+
+<h3 id="配置快捷键">配置快捷键</h3>
+
+<p>在使用软件的时候，我准备将ctrl+alt+s作为截屏键，flameshot gui是截图命令 <br />
+<img src="get_flameshot/shortcut.png" alt="alt text" /></p>
+
+<p>结果发现left alt和left super是反着的，这不能忍(虽然可以调换键帽hh)，我们直接打开gnome tweaks，没有的话可以sudo yum install gnome-tweaks，然后如下图设置可以将按键换回来。 <br />
+<img src="get_flameshot/gnome_tweaks.png" alt="gnome_tweaks" /></p>
+
+<h2 id="结束">结束</h2>
+:ET
