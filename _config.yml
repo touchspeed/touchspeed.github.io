@@ -12,14 +12,13 @@ mode: dark # default theme "dark" | "light"
 # Profile settings
 author:
   name: Meve # author name
-  bio: >- # tell to the world
-    The minimalist Jekyll theme, light and dark mode support, for running a personal site and blog, 
+  bio: >- # tell to the world 
     Hello World！
-  username: username # general username
-  github: github_username # github username
-  twitter: twitter_username # twitter username
-  facebook: facebook_username # facebook username
-  email: your-email@email.com # email adress
+  username: touchspeed # general username
+  github: touchspeed # github username
+  twitter: null # twitter username
+  facebook: null # facebook username
+  email: null # email adress
   avatar: /assets/img/avatar.jpg # change with your own avatar
 
 # URL settings
@@ -46,7 +45,7 @@ defaults:
       path: ""
     values:
       layout: post
-      comments: true
+      comments: false
 
 # Jekyll Compose default front matter
 jekyll_compose:

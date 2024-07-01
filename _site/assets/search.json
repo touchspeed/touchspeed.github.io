@@ -49,14 +49,6 @@
     } ,
   
     {
-      "title"    : "Python Notes from Intro to Machine Learning",
-      "description" : "Notes and code snippets of Python that I&#39;ve been collecting so far throughout the &quot;Intro to Machine Learning&quot; course.",
-      "tags"     : "python, machine-learning",
-      "url"      : "/python-notes-from-Intro-to-machine-learning/",
-      "date"     : "2018-04-14 10:00:00 +0700"
-    } ,
-  
-    {
       "title"    : "React Component with Dot Notation",
       "description" : "Learn how to define a React component that is accessible through the dot notation. A common component pattern to show a parent-child relation.",
       "tags"     : "javascript, react",
