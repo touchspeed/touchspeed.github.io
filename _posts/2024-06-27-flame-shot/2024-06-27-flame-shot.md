@@ -2,9 +2,9 @@
 layout: post
 title: flameshot，平替snipaste
 date: 2024-06-28 19:20
-category: Linux-APP
+category: Linux
 author: Meve
-tags: [Linux]
+tags: [Linux,APP]
 summary: 
 ---
 

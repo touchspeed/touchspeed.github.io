@@ -1,11 +1,27 @@
 [
   
     {
+      "title"    : "ddr3 mig",
+      "description" : "",
+      "tags"     : "IP, FPGA",
+      "url"      : "/ddr3-mig/",
+      "date"     : "2024-07-02 15:03:00 +0700"
+    } ,
+  
+    {
       "title"    : "flameshot，平替snipaste",
       "description" : "",
-      "tags"     : "Linux",
+      "tags"     : "Linux, APP",
       "url"      : "/flame-shot/",
       "date"     : "2024-06-28 19:20:00 +0700"
+    } ,
+  
+    {
+      "title"    : "IC EDA on Windows using WSL",
+      "description" : "",
+      "tags"     : "EDA, Linux, WSL",
+      "url"      : "/ic-eda-on-windows-using-wsl/",
+      "date"     : "2024-05-07 16:00:00 +0700"
     } ,
   
     {
@@ -25,35 +41,11 @@
     } ,
   
     {
-      "title"    : "Cara ribet memperbarui forked repo",
-      "description" : "Ada dua cara untuk memperbarui forked repository menggunakan web interface yang disediakan oleh github tapi ribet, atau melalui terminal yang lebih ribet lagi.",
-      "tags"     : "tips, git, software",
-      "url"      : "/cara-memperbarui-fork-repository/",
-      "date"     : "2020-01-29 01:00:00 +0700"
-    } ,
-  
-    {
-      "title"    : "What is a shell? 🐚 adalah kerang ajaib?",
-      "description" : "Shell adalah sebuah command-line interpreter; program yang berperan sebagai penerjemah perintah yang diinputkan oleh User yang melalui terminal, sehingga perintah tersebut bisa dimengerti oleh si Kernel.",
-      "tags"     : "unix/linux, cli",
-      "url"      : "/apa-itu-shell/",
-      "date"     : "2020-01-25 11:58:47 +0700"
-    } ,
-  
-    {
       "title"    : "How this site was born 👶",
       "description" : "All the services are free, a source code this site placed on github repository and intergration with netlify service, another service that you can use is github page for hosting your own static site.",
       "tags"     : "blog, netlify, jekyll, github",
       "url"      : "/how-this-site-was-made/",
       "date"     : "2018-09-28 09:45:47 +0700"
-    } ,
-  
-    {
-      "title"    : "React Component with Dot Notation",
-      "description" : "Learn how to define a React component that is accessible through the dot notation. A common component pattern to show a parent-child relation.",
-      "tags"     : "javascript, react",
-      "url"      : "/react-component-with-dot-notation/",
-      "date"     : "2018-04-07 23:04:00 +0700"
     } 
   
 ]

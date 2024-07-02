@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-06-30T13:38:08+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">flameshot，平替snipaste</title><link href="http://localhost:4000/flame-shot/" rel="alternate" type="text/html" title="flameshot，平替snipaste" /><published>2024-06-28T19:20:00+07:00</published><updated>2024-06-28T19:20:00+07:00</updated><id>http://localhost:4000/flame-shot</id><content type="html" xml:base="http://localhost:4000/flame-shot/"><![CDATA[<h3 id="前言">前言</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-02T18:19:33+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">ddr3 mig</title><link href="http://localhost:4000/ddr3-mig/" rel="alternate" type="text/html" title="ddr3 mig" /><published>2024-07-02T15:03:00+07:00</published><updated>2024-07-02T15:03:00+07:00</updated><id>http://localhost:4000/ddr3-mig</id><content type="html" xml:base="http://localhost:4000/ddr3-mig/"><![CDATA[<h2 id="前言">前言</h2>]]></content><author><name>Meve</name></author><category term="FPGA" /><category term="IP" /><category term="FPGA" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">flameshot，平替snipaste</title><link href="http://localhost:4000/flame-shot/" rel="alternate" type="text/html" title="flameshot，平替snipaste" /><published>2024-06-28T19:20:00+07:00</published><updated>2024-06-28T19:20:00+07:00</updated><id>http://localhost:4000/flame-shot</id><content type="html" xml:base="http://localhost:4000/flame-shot/"><![CDATA[<h3 id="前言">前言</h3>
 
 <p>snipaste是我在win上经常用到的一个截图软件，操作方便，贴图功能也很便利。 <br />
 由于现在我更多使用linux，便想寻找一个替代品，而flameshot，则是目前我认为linux上最好用的截图软件。 <br />
@@ -43,7 +43,163 @@ ln -snf ../Utilities/Flameshot-12.1.0.x86_64.AppImage ./flameshot <br /></p>
 <p>结果发现left alt和left super是反着的，这不能忍(虽然可以调换键帽hh)，我们直接打开gnome tweaks，没有的话可以sudo yum install gnome-tweaks，然后如下图设置可以将按键换回来。 <br />
 <img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-06-27-flame-shot/get_flameshot/gnome_tweaks.png" alt="gnome_tweaks" /></p>
 
-<h2 id="结束">结束</h2>]]></content><author><name>Meve</name></author><category term="Linux-APP" /><category term="Linux" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">Maths Example with Mathjax</title><link href="http://localhost:4000/maths-example/" rel="alternate" type="text/html" title="Maths Example with Mathjax" /><published>2021-06-17T05:57:49+07:00</published><updated>2021-06-17T05:57:49+07:00</updated><id>http://localhost:4000/maths-example</id><content type="html" xml:base="http://localhost:4000/maths-example/"><![CDATA[<p>Below is an example of maths using mathjax.</p>
+<h2 id="结束">结束</h2>]]></content><author><name>Meve</name></author><category term="Linux" /><category term="Linux" /><category term="APP" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">IC EDA on Windows using WSL</title><link href="http://localhost:4000/ic-eda-on-windows-using-wsl/" rel="alternate" type="text/html" title="IC EDA on Windows using WSL" /><published>2024-05-07T16:00:00+07:00</published><updated>2024-05-07T16:00:00+07:00</updated><id>http://localhost:4000/ic-eda-on-windows-using-wsl</id><content type="html" xml:base="http://localhost:4000/ic-eda-on-windows-using-wsl/"><![CDATA[<h2 id="前言">前言</h2>
+
+<p>本文记录在wsl上使用eda遇到的一些问题，这是我的wsl版本信息:<br />
+<img src="wsl.png" alt="alt text" /><br />
+基于ubuntu20.04 wsl，安装的synopsys eda大部分版本都是2018。<br />
+如果是ubuntu22.04会遇到一些棘手的问题，难以解决。</p>
+
+<h2 id="痛点">痛点</h2>
+
+<p>最最最难受的一点，wsl每次电脑重启mac会变化，导致synopsys、matlab之类的license失效。<br />
+<img src="lm1.png" alt="alt text" /><br />
+<img src="lm2.png" alt="alt text" /><br />
+下面给出解决方法：<br />
+在Windows中的C:\Users&lt;your_username&gt;目录下创建一个.wslconfig文件，然后在文件中写入如下内容</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="err">experimental</span><span class="p">]</span><span class="w">
+</span><span class="err">autoMemoryReclaim=gradual</span><span class="w">
+</span><span class="err">networkingMode=mirrored</span><span class="w">
+</span><span class="err">dnsTunneling=</span><span class="kc">true</span><span class="w">
+</span><span class="err">firewall=</span><span class="kc">true</span><span class="w">
+</span><span class="err">autoProxy=</span><span class="kc">true</span><span class="w">
+</span></code></pre></div></div>
+<p>mirror模式下可以发现ifconfig的mac就是真实mac。<br />
+<a href="https://unix.stackexchange.com/questions/772303/machine-mac-address-with-ubuntu-on-top-of-wsl2">参考1</a><br />
+<a href="https://github.com/microsoft/WSL/issues/5352">参考2</a><br />
+<a href="https://github.com/microsoft/WSL/issues/5291">参考3</a><br />
+其实我本来是为了解决wsl不走代理的问题，结果发现还可以把eda license mac顺便fix下来。<br /></p>
+
+<h2 id="开始">开始</h2>
+
+<p>使用synopsys installer，setup.sh，缺少libXss.so.1，如图:<br />
+<img src="2.png" alt="alt text" /><br />
+<a href="https://www.cnblogs.com/taitai139/p/14046962.html">参考此文章</a>，安装libXss1:<br />
+<img src="3.png" alt="alt text" /><br /></p>
+
+<p>lmgrd提示no such file，sudo apt-get install lsb-core即可解决<br />
+<img src="4.png" alt="alt text" /><br />
+<img src="lsb.png" alt="alt text" /><br />
+无法创建.flexlm问题:<br />
+<img src="5.png" alt="alt text" /><br />
+解决:<br />
+<img src="6.png" alt="alt text" /><br /></p>
+
+<p>再次lmgrd激活提示端口占用，lmgrd failed to open the tcp port，ps找出进程编号kill掉，再等一段时间就可以再次激活license：<br />
+<img src="7.png" alt="alt text" /><br /></p>
+
+<p>dvt正常:<br />
+<img src="dvt.png" alt="alt text" /><br /></p>
+
+<p>euclide权限问题，提示不能写权限运行，或run with ‘private_install’，这是目录权限问题导致:<br />
+<img src="euclide1.png" alt="alt text" /><br />
+改下目录权限即可，用户组改为root，sudo chown root xxxx，如图:<br />
+<img src="euclide2.png" alt="alt text" /><br />
+euclide cannot open display问题<br />
+<img src="euclide3.png" alt="alt text" /><br />
+进入euclide的eclipse文件夹，sudo vim euclide<br />
+<img src="euclide4.png" alt="alt text" /><br />
+如图注释掉<br />
+<img src="euclide5.png" alt="alt text" /><br />
+可以运行:<br />
+<img src="euclide6.png" alt="alt text" /><br />
+新的问题，暂时无法解决<br />
+<img src="euclide7.png" alt="alt text" /><br /></p>
+
+<p>verdi提示syntax error<br />
+<img src="verdi1.png" alt="alt text" /><br />
+sudo dpkg-reconfigure dash，选择no，遇到新的问题<br />
+<img src="verdi2.png" alt="alt text" /><br />
+尝试安装libXmu6找不到<br />
+<img src="verdi3.png" alt="alt text" /><br />
+search一下，发现了吗，so库是libXmu6，需要安装的是libxmu6，这…<br />
+<img src="verdi4.png" alt="alt text" /><br />
+新的依赖<br />
+<img src="verdi5.png" alt="alt text" /><br /></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:linuxuprising/libpng12
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>libpng12-0
+</code></pre></div></div>
+
+<p>nlint，如图安装依赖<br />
+<img src="nlint.png" alt="alt text" /><br />
+nlint -gui，如图安装依赖<br />
+<img src="nlint1.png" alt="alt text" /><br />
+成功<br />
+<img src="nlint2.png" alt="alt text" /><br /></p>
+
+<p>spyglass正常<br />
+<img src="sg.png" alt="alt text" /><br /></p>
+
+<p>formality，安装csh<br />
+<img src="fm.png" alt="alt text" /><br />
+新的问题，如图安装依赖libgl1<br />
+<img src="fm1.png" alt="alt text" /><br />
+成功<br />
+<img src="fm2.png" alt="alt text" /><br />
+一个警告<br />
+<img src="fm3.png" alt="alt text" /><br />
+在~/.bashrc中添加，这个还能解决formality、dc交互shell中的上下键乱码<br />
+<img src="fm4.png" alt="alt text" /><br /></p>
+
+<p>tmax tetramax<br />
+<img src="tmax.png" alt="alt text" /><br />
+解决方法<br />
+<img src="tmax1.png" alt="alt text" /><br />
+<img src="tmax2.png" alt="alt text" /><br />
+建立链接<br />
+<img src="tmax3.png" alt="alt text" /><br />
+安装libmng2<br />
+<img src="tmax4.png" alt="alt text" /><br />
+建立链接<br />
+<img src="tmax5.png" alt="alt text" /><br />
+成功<br />
+<img src="tmax6.png" alt="alt text" /><br /></p>
+
+<p>lc_shell lib compiler，安装libpulse0<br />
+<img src="lc.png" alt="alt text" /><br /></p>
+
+<p>icc_shell ic compiler，遇到glibc问题<br />
+<img src="icc.png" alt="alt text" /><br />
+网上的解决方法，我没有尝试，从ubuntu22.04退回20.04没有此问题<br />
+<img src="icc1.png" alt="alt text" /><br /></p>
+
+<p>tessent -shell<br /></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>libgtk2.0-0
+<span class="nb">sudo </span>apt <span class="nb">install </span>libpangoxft-1.0-0
+</code></pre></div></div>
+
+<p>calibre -gui，invalid operating system<br />
+<img src="calibre.png" alt="alt text" /><br />
+/etc/redhat-release存有以下系统版本内容就不会再报<br />
+<img src="calibre1.png" alt="alt text" /><br />
+新建文件填入上面的内容，并设置权限<br />
+<img src="calibre2.png" alt="alt text" /><br /></p>
+
+<p>Virtuoso，过程比较乱，没有整理<br />
+<img src="image.png" alt="alt text" /><br />
+<img src="image-1.png" alt="alt text" /><br />
+<img src="image-2.png" alt="alt text" /><br />
+<img src="image-3.png" alt="alt text" /><br />
+<img src="image-4.png" alt="alt text" /><br />
+<img src="image-5.png" alt="alt text" /><br />
+<img src="image-6.png" alt="alt text" /><br />
+<img src="image-7.png" alt="alt text" /><br />
+<img src="image-8.png" alt="alt text" /><br />
+<img src="image-9.png" alt="alt text" /><br />
+<img src="image-10.png" alt="alt text" /><br />
+集成calibre，需要~/.cdsinit<br />
+<img src="image-11.png" alt="alt text" /><br />
+新建tmp文件夹<br />
+<img src="image-12.png" alt="alt text" /><br />
+<img src="image-13.png" alt="alt text" /><br />
+<img src="image-14.png" alt="alt text" /><br />
+<img src="image-15.png" alt="alt text" /><br />
+安装字体<br />
+<img src="image-16.png" alt="alt text" /><br /></p>]]></content><author><name>Meve</name></author><category term="Linux" /><category term="EDA" /><category term="Linux" /><category term="WSL" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">Maths Example with Mathjax</title><link href="http://localhost:4000/maths-example/" rel="alternate" type="text/html" title="Maths Example with Mathjax" /><published>2021-06-17T05:57:49+07:00</published><updated>2021-06-17T05:57:49+07:00</updated><id>http://localhost:4000/maths-example</id><content type="html" xml:base="http://localhost:4000/maths-example/"><![CDATA[<p>Below is an example of maths using mathjax.</p>
 
 <p>Any page needing maths should start with the frontmatter:</p>
 
@@ -77,176 +233,7 @@ such as \(\delta(t) \xrightarrow{\mathscr{F}} 1\).</p>
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>Meve</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Cara ribet memperbarui forked repo</title><link href="http://localhost:4000/cara-memperbarui-fork-repository/" rel="alternate" type="text/html" title="Cara ribet memperbarui forked repo" /><published>2020-01-29T01:00:00+07:00</published><updated>2020-01-29T01:00:00+07:00</updated><id>http://localhost:4000/cara-memperbarui-fork-repository</id><content type="html" xml:base="http://localhost:4000/cara-memperbarui-fork-repository/"><![CDATA[<p>Berawal dari saya pengen memperbarui repo yang tua dari suatu organisasi, niatnya pengen rumat ulang nih, ternyata dari orginal reponya ada update, sekalian buat artikel deh, lebih kurang gambaranya seperti ini.</p>
-
-<figure>
-<img src="/cara-memperbarui-fork-repository/repo.png" alt="ilustrasi repo yang mau diupdate" />
-<figcaption>Fig 1. Gambaran ribetnya.</figcaption>
-</figure>
-
-<p>Ada dua cara untuk memperbarui forked repository menggunakan web interface yang disediakan oleh github tapi ribet, atau melalui terminal yang lebih ribet lagi.</p>
-
-<h3 id="melalui-github-boring-way-">Melalui Github (boring way) 💻</h3>
-
-<ol>
-  <li>Buka repo yang hasil fork di Github.</li>
-  <li>Klik <strong>Pull Requests</strong> di sebelah kanan, lalu <strong>New Pull Request</strong>.</li>
-  <li>Akan memunculkan hasil compare antara repo upstream dengan repo kamu(forked repo), dan jika menyatakan “There isn’t anything to compare.”, tekan link <strong>switching the base</strong>, yang mana sekarang repo kamu(forked repo) akan dibalik menjadi base repo dan repo upstream menjadi head repo.</li>
-  <li>Tekan <strong>Create Pull Request</strong>, beri judul pull request, Tekan <strong>Send Pull Request</strong>.</li>
-  <li>Tekan <strong>Merge Pull Request</strong> dan <strong>Confirm Merge</strong>.</li>
-</ol>
-
-<p>* <em>pastikan kamu tidak merubah apapun pada forked repo, supaya melakukan merge secara otomatis, kalo tidak ya paling2 konflik.</em></p>
-
-<h3 id="melalui-terminal-️">Melalui terminal ⌨️</h3>
-
-<p>Tambahkan remote alamat repository yang aslinya disini tak beri nama <code class="language-plaintext highlighter-rouge">upstream</code>., ganti <code class="language-plaintext highlighter-rouge">ORIGINAL_OWNER</code> dan <code class="language-plaintext highlighter-rouge">ORIGINAL_REPO</code> dengan alamat repo aslimu.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git add remote upstream git@github.com:ORIGINAL_OWNER/ORIGINAL_REPO.git
-<span class="nv">$ </span>git remote <span class="nt">-v</span>
-<span class="o">&gt;</span> origin    git@github.com:piharpi/www.git <span class="o">(</span>fetch<span class="o">)</span> <span class="c"># forked repo</span>
-<span class="o">&gt;</span> origin    git@github.com:piharpi/www.git <span class="o">(</span>push<span class="o">)</span> <span class="c"># forked repo</span>
-<span class="o">&gt;</span> upstream    git@github.com:ORIGINAL_OWNER/ORIGINAL_REPO.git <span class="o">(</span>fetch<span class="o">)</span> <span class="c"># upstream repo / original repo</span>
-<span class="o">&gt;</span> upstream    git@github.com:ORIGINAL_OWNER/ORIGINAL_REPO.git <span class="o">(</span>push<span class="o">)</span> <span class="c"># upstream repo / original repo</span>
-</code></pre></div></div>
-
-<p>Checkout ke local branch <code class="language-plaintext highlighter-rouge">master</code>.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git checkout master
-<span class="o">&gt;</span> Switched to branch <span class="s1">'master'</span>
-</code></pre></div></div>
-
-<p>Jika sudah, Merge local repo dengan remote <code class="language-plaintext highlighter-rouge">upstream/master</code>.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git merge upstream/master
-</code></pre></div></div>
-
-<p>Terakhir push local repo ke remote <code class="language-plaintext highlighter-rouge">origin</code>.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git add <span class="nt">-A</span>
-<span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"updating origin repo"</span> <span class="o">&amp;&amp;</span> git push <span class="nt">-u</span> origin master
-</code></pre></div></div>
-
-<p>Selamat mencoba cara ribet ini, semoga bisa dipahami, saya sendiri lebih senang melalui terminal, klo ada yang ribet kenapa cari yang mudah.</p>
-
-<h5 id="resources">Resources</h5>
-
-<ul>
-  <li><a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork">Syncing a fork</a></li>
-  <li><a href="https://rick.cogley.info/post/update-your-forked-repository-directly-on-github/#top">Update your fork directly on Github</a></li>
-</ul>]]></content><author><name>Meve</name></author><category term="tips" /><category term="git" /><category term="software" /><summary type="html"><![CDATA[Ada dua cara untuk memperbarui forked repository menggunakan web interface yang disediakan oleh github tapi ribet, atau melalui terminal yang lebih ribet lagi.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/cara-memperbarui-fork-repository/repo.png" /><media:content medium="image" url="http://localhost:4000/cara-memperbarui-fork-repository/repo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What is a shell? 🐚 adalah kerang ajaib?</title><link href="http://localhost:4000/apa-itu-shell/" rel="alternate" type="text/html" title="What is a shell? 🐚 adalah kerang ajaib?" /><published>2020-01-25T11:58:47+07:00</published><updated>2020-01-25T11:58:47+07:00</updated><id>http://localhost:4000/apa-itu-shell</id><content type="html" xml:base="http://localhost:4000/apa-itu-shell/"><![CDATA[<p><a href="http://www.youtube.com/watch?v=tc4ROCJYbm0&amp;t=70" target="_blank" rel="noopener">Dulu</a> Sebelum adanya <abbr title="Graphical User Interface">GUI</abbr> cara user berinteraksi dengan komputer menggunakan <abbr title="Command Line Interface">CLI</abbr> yaitu mengetik baris perintah pada sebuah antarmuka dalam bentuk baris teks seperti 👇.</p>
-
-<figure>
-<img src="/apa-itu-shell/terminal_nginx.gif" alt="installing nginx in ubuntu" />
-<figcaption>Fig 1. Terminal emulator, instalasi package dan check service.</figcaption>
-</figure>
-
-<p>Jika kamu pernah menggunakan unix/linux mungkin pernah menggunakan program diatas, bahkan mungkin setiap hari menggunakannya untuk mengeksekusi suatu perintah melalui <a href="http://en.wikipedia.org/wiki/List_of_terminal_emulators" target="_blank" rel="noopener">terminal emulator</a>.</p>
-
-<p>User<sup id="user"><a href="#user-ref">[1]</a></sup> tidak bisa secara langsung berkomunikasi dengan sebuah hardware komputer, maka dari itu kita membutuhkan sebuah sistem operasi; <strong>Kernel</strong> adalah program yang merupakan inti utama dari sistem operasi komputer.</p>
-
-<figure>
-<img src="/apa-itu-shell/kernel.png" alt="kernel central of operating system" />
-<figcaption>Fig 2. bagan kernel.</figcaption>
-</figure>
-
-<p>Kernel memfasilitasi interaksi antara komponen perangkat keras dan perangkat lunak, berperan untuk menangani permintaan input/ouput dari perangkat lunak, selanjutnya menerjemahkannya ke dalam pemrosesan data untuk diintruksikan ke CPU, sehingga Hardware(cpu, memory, devices) mengerti perintah yang dimaksud dari pengguna.</p>
-
-<p>Ketika kita menginputkan suatu perintah pada terminal emulator, kernel tidak langsung mengerti perintah yang kita ketik, kita membutuhkan suatu interface sebagai perantara menuju kernel yaitu <strong>Shell</strong>.</p>
-
-<figure>
-<img src="/apa-itu-shell/shell.png" alt="shell" />
-<figcaption>Fig 3. bagan komunikasi shell.</figcaption>
-</figure>
-
-<p><mark>Shell adalah sebuah command-line interpreter; program yang berperan sebagai penerjemah perintah yang diinputkan oleh User yang melalui terminal</mark>, sehingga perintah tersebut bisa dimengerti oleh si Kernel.</p>
-
-<p>Login shell biasanya ditetapkan oleh local System Administrator ketika pada saat pertama user kamu dibuat, kamu bisa lihat login shell yang sedang kamu gunakan dengan perintah dibawah ini.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$SHELL</span>
-<span class="c"># atau</span>
-<span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$0</span>
-</code></pre></div></div>
-
-<p>Setiap shell mempunyai default prompt. beberapa shell yang paling umum:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="o">(</span>dollar sign<span class="o">)</span>   <span class="c"># sh, ksh, bash</span>
-% <span class="o">(</span>percent sign<span class="o">)</span>  <span class="c"># csh, tcsh</span>
-</code></pre></div></div>
-
-<h5 id="terminologi-pada-shell-prompt">Terminologi pada shell prompt</h5>
-
-<p>Shell prompt adalah tempat dimana kita menuliskan suatu perintah, berikut adalah terminologinya ini membantu, jika kamu ingin mengetahui bagian-bagianya.</p>
-
-<figure>
-<img src="/apa-itu-shell/term_shell_prompt.png" alt="shell" />
-<figcaption>Fig 4. bagian-bagin dari shell prompt.</figcaption>
-</figure>
-
-<p>Dibawah ini salah satu contoh perintah sederhana untuk menampilkan sebuah arsitektur CPU komputer yang sedang saya gunakan.</p>
-
-<figure>
-<img src="/apa-itu-shell/terminal_lscpu.gif" alt="installing nginx in ubuntu" />
-<figcaption>Fig 5. menampilkan informasi tentang arsitektur CPU.</figcaption>
-</figure>
-
-<p>Dari perintah yang contohkan, ketika user mengetikan suatu inputan perintah di terminal dan menekan <kbd>ENTER</kbd>, maka shell akan mengubah perintah user menjadi bahasa yang bisa dipahami oleh kernel, dan Kernel menerjemahkannya ke dalam pemrosesan data untuk diintruksikan ke Hardware sehingga menghasilkan output yg sesuai dengan perintah user.</p>
-
-<p>Shell mempunyai beberapa macam dan turunan, berikut yang paling umum.</p>
-
-<figure>
-<img src="/apa-itu-shell/shell_evolution.png" alt="shell evolution" />
-<figcaption>Fig 6. evaluasi shell dari tahun ke tahun.</figcaption>
-</figure>
-
-<p>Sedikit penjelasan dari gambar diatas.</p>
-
-<ul>
-  <li>Bourne shell <code class="language-plaintext highlighter-rouge">sh</code>
-Dikembangkan oleh Stephen Bourne di Bell Labs, yang kala itu sebagai pengganti Thompson shell(diciptakan Ken Thompson), banyak sistem unix-like tetap memiliki <code class="language-plaintext highlighter-rouge">/bin/sh</code>—yang mana menjadi symbolic link atau hard link, bahkan ketika shell lain yang digunakan tetap <code class="language-plaintext highlighter-rouge">sh</code> adalah sebagai dasarnya, sebagai kompatibilitas perintah.</li>
-  <li>Korn shell <code class="language-plaintext highlighter-rouge">ksh</code> Unix shell yang dikembangkan oleh David Korn di Bell Labs,
-inisialiasi pengembangan ini berdasar pada source code Bourne shell, namun juga memiliki fitur <code class="language-plaintext highlighter-rouge">csh</code> dan <code class="language-plaintext highlighter-rouge">sh</code>, pengembanganya pun pada saat saya menulis ini pun terus <a href="http://github.com/att/ast" target="_blank" rel="noopener">terawat</a>.</li>
-  <li>Bourne again shell <code class="language-plaintext highlighter-rouge">bash</code>
-adalah proyek ini open source <a href="http://gnu.org/software/bash/" target="_blank" rel="noopener">GNU project</a> memilki kompatibel dengan <code class="language-plaintext highlighter-rouge">sh</code> yang menggabungkan fitur penting dari <code class="language-plaintext highlighter-rouge">ksh</code> dan <code class="language-plaintext highlighter-rouge">csh</code>, dan menjadi salah satu shell yang paling umum digunakan (umumnya menjadi default shell login Linux dan Apple’s macOS Mojave).</li>
-  <li>Z shell <code class="language-plaintext highlighter-rouge">zsh</code> ini mempunyai wadah komunitasnya disebutnya <a href="http://ohmyz.sh/" target="_blank" rel="noopener">“Oh My Zsh”</a>, plug-in dan theme <code class="language-plaintext highlighter-rouge">zsh</code> bisa kita temukan di komunitas ini, saya saat ini menggunakan <code class="language-plaintext highlighter-rouge">zsh</code>, shell ini juga menjadi default dari sistem operasi macOS Catalina, yang menggantikan bash.</li>
-  <li>friendly interactive shell <code class="language-plaintext highlighter-rouge">fish</code>
-yah sesuai dengan <a href="http://fishshell.com/" target="_blank" rel="noopener">deskripsi</a> di web nya, menurut saya shell ini fun banget, fitur yang saya sukai dari shell ini autosuggestions, dan konfigurasi yang mudah melalui web based.</li>
-</ul>
-
-<p>Masih banyak yang belum dijelaskan pada tulisan ini jika masih tertarik, baca lebih <a href="http://en.wikipedia.org/wiki/List_of_command-line_interpreters#Operating_system_shells" target="_blank" rel="noopener">banyak</a> dan juga <a href="http://en.wikipedia.org/wiki/Comparison_of_command_shells" target="_blank" rel="noopener">komparasinya</a> masing-masing shell.</p>
-
-<p>Jika kamu tertarik untuk mengubah default shell login pada sistem operasi, kamu bisa menginstall dengan cara mengikuti didokumentasi/cara penginstallan dimasing-masing shell disini saya tidak membahas karena distro yang kita pakai mungkin berbeda-beda.</p>
-
-<p>Untuk menjadikan default shell login pada OS bisa menggunakan perintah ini.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># command</span>
-<span class="nv">$ </span><span class="nb">sudo </span>chsh <span class="o">[</span>options] <span class="o">[</span>LOGIN]
-
-<span class="c"># contoh penggunaan</span>
-<span class="nv">$ </span><span class="nb">sudo </span>chsh <span class="nt">-s</span> /user/bin/zsh harpi
-<span class="c"># mengubah default shell user harpi menjadi zsh shell.</span>
-<span class="nv">$ </span>reboot
-
-<span class="c"># atau kamu juga bisa mengubah file /etc/passwd dan edit secara manual user shellnya.</span>
-<span class="c"># jika masih bingung manfaatkan perintah man untuk melihat manual page.</span>
-<span class="nv">$ </span>man chsh
-</code></pre></div></div>
-
-<p>Terakhir untuk tulisan ini, shell memilki berbagai macam, pilihlah shell yang sesuai dengan keinginanmu untuk menunjang produktivitas dan sesuaikan dengan kebutuhan, terlalu banyak plugin dan kebingungan memilih tema itu buruk 😁.</p>
-
-<p>Terimakasih sudah baca, <em>penulis menerima kritik dan saran.</em></p>
-
-<h5 id="notes">Notes</h5>
-
-<p><small id="user-ref"><sup><a href="#user">[1]</a></sup> Manusia yang mengoperasikan dan mengendalikan sistem komputer.</small></p>
-
-<h5 id="resources">Resources</h5>
-
-<ul>
-  <li><a href="http://developer.ibm.com/tutorials/l-linux-shells/">Evolution shells in Linux</a></li>
-  <li><a href="http://www.linfo.org/kernel.html">Kernel Defintion</a></li>
-  <li><a href="http://www.cis.rit.edu/class/simg211/unixintro/Shell.html">The Shell</a></li>
-</ul>]]></content><author><name>Meve</name></author><category term="unix/linux" /><category term="cli" /><summary type="html"><![CDATA[Shell adalah sebuah command-line interpreter; program yang berperan sebagai penerjemah perintah yang diinputkan oleh User yang melalui terminal, sehingga perintah tersebut bisa dimengerti oleh si Kernel.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/apa-itu-shell/shell_evolution.png" /><media:content medium="image" url="http://localhost:4000/apa-itu-shell/shell_evolution.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How this site was born 👶</title><link href="http://localhost:4000/how-this-site-was-made/" rel="alternate" type="text/html" title="How this site was born 👶" /><published>2018-09-28T09:45:47+07:00</published><updated>2018-09-28T09:45:47+07:00</updated><id>http://localhost:4000/how-this-site-was-made</id><content type="html" xml:base="http://localhost:4000/how-this-site-was-made/"><![CDATA[<p>The website was made using Jekyll the one of open source static sites generator, and using my own simple theme, I called <a href="https://github.com/piharpi/klise">klisé</a>.</p>
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>Meve</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">How this site was born 👶</title><link href="http://localhost:4000/how-this-site-was-made/" rel="alternate" type="text/html" title="How this site was born 👶" /><published>2018-09-28T09:45:47+07:00</published><updated>2018-09-28T09:45:47+07:00</updated><id>http://localhost:4000/how-this-site-was-made</id><content type="html" xml:base="http://localhost:4000/how-this-site-was-made/"><![CDATA[<p>The website was made using Jekyll the one of open source static sites generator, and using my own simple theme, I called <a href="https://github.com/piharpi/klise">klisé</a>.</p>
 
 <hr />
 
@@ -303,102 +290,4 @@ yah sesuai dengan <a href="http://fishshell.com/" target="_blank" rel="noopener"
 
 <p>Wait for moment, and voila..! your site’s are hosting and using <code class="language-plaintext highlighter-rouge">.netlify.com</code> tld, if your website wants to look professional, just buy a domain from your favorite domain store. or if you the first time, I advice using namecheap.com<em>(isn’t sponsor)</em> *based on my experienced it provides good service and have various TLDs.</p>
 
-<p>So, what you waiting for, just create your own website for free.</p>]]></content><author><name>Meve</name></author><category term="blog" /><category term="netlify" /><category term="jekyll" /><category term="github" /><summary type="html"><![CDATA[All the services are free, a source code this site placed on github repository and intergration with netlify service, another service that you can use is github page for hosting your own static site.]]></summary></entry><entry><title type="html">React Component with Dot Notation</title><link href="http://localhost:4000/react-component-with-dot-notation/" rel="alternate" type="text/html" title="React Component with Dot Notation" /><published>2018-04-07T23:04:00+07:00</published><updated>2018-04-07T23:04:00+07:00</updated><id>http://localhost:4000/react-component-with-dot-notation</id><content type="html" xml:base="http://localhost:4000/react-component-with-dot-notation/"><![CDATA[<p><strong>This article is for Demo purpose</strong></p>
-
-<p>The article was originally on <a href="https://github.com/risan/risanb.com/blob/master/content/posts/react-component-with-dot-notation/index.md">this repo</a></p>
-
-<p>This is my answer to someone’s question on <a href="https://stackoverflow.com/questions/49256472/react-how-to-extend-a-component-that-has-child-components-and-keep-them/49258038#answer-49258038">StackOverflow</a>. How can we define a React component that is accessible through the dot notation?</p>
-
-<p>Take a look at the following code. We have the <code class="language-plaintext highlighter-rouge">Menu</code> component and its three children <code class="language-plaintext highlighter-rouge">Menu.Item</code>:</p>
-
-<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">(</span>
-  <span class="p">&lt;</span><span class="nc">Menu</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nc">Menu</span><span class="p">.</span><span class="nc">Item</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nc">Menu</span><span class="p">.</span><span class="nc">Item</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nc">Menu</span><span class="p">.</span><span class="nc">Item</span><span class="p">&gt;</span>Blog<span class="p">&lt;/</span><span class="nc">Menu</span><span class="p">.</span><span class="nc">Item</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nc">Menu</span><span class="p">.</span><span class="nc">Item</span><span class="p">&gt;</span>About<span class="p">&lt;/</span><span class="nc">Menu</span><span class="p">.</span><span class="nc">Item</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nc">Menu</span><span class="p">&gt;</span>
-<span class="p">);</span>
-</code></pre></div></div>
-
-<p>How can we define a component like <code class="language-plaintext highlighter-rouge">Menu</code>? Where it has some kind of “sub-component” that is accessible through a dot notation.</p>
-
-<p>Well, it’s actually a pretty common pattern. And it’s not really a sub-component, it’s just another component being attached to another one.</p>
-
-<p>Let’s use the above <code class="language-plaintext highlighter-rouge">Menu</code> component for example. We’ll put this component to its own dedicated file: <code class="language-plaintext highlighter-rouge">menu.js</code>. First, let’s define these two components separately on this module file:</p>
-
-<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// menu.js</span>
-<span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
-
-<span class="k">export</span> <span class="kd">const</span> <span class="nx">MenuItem</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">children</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">children</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;;</span>
-
-<span class="k">export</span> <span class="k">default</span> <span class="kd">const</span> <span class="nx">Menu</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">children</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">children</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;;</span>
-</code></pre></div></div>
-
-<p>It’s just a simple functional component. The <code class="language-plaintext highlighter-rouge">Menu</code> is the parent with <code class="language-plaintext highlighter-rouge">ul</code> tag. And the <code class="language-plaintext highlighter-rouge">MenuItem</code> will act as its children. Now we can use these two components like so:</p>
-
-<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">render</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react-dom</span><span class="dl">"</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">Menu</span><span class="p">,</span> <span class="p">{</span> <span class="nx">MenuItem</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./menu</span><span class="dl">"</span><span class="p">;</span>
-
-<span class="kd">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">(</span>
-  <span class="p">&lt;</span><span class="nc">Menu</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nc">MenuItem</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nc">MenuItem</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nc">MenuItem</span><span class="p">&gt;</span>Blog<span class="p">&lt;/</span><span class="nc">MenuItem</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nc">MenuItem</span><span class="p">&gt;</span>About<span class="p">&lt;/</span><span class="nc">MenuItem</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nc">Menu</span><span class="p">&gt;</span>
-<span class="p">);</span>
-
-<span class="nx">render</span><span class="p">(&lt;</span><span class="nc">App</span> <span class="p">/&gt;,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">root</span><span class="dl">"</span><span class="p">));</span>
-</code></pre></div></div>
-
-<p>Where’s the dot notation? To make our <code class="language-plaintext highlighter-rouge">MenuItem</code> component accessible through the dot nation, we can simply attach it to the <code class="language-plaintext highlighter-rouge">Menu</code> component as a static property. To do so, we can no longer use the functional component for <code class="language-plaintext highlighter-rouge">Menu</code> and switch to the class component instead:</p>
-
-<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// menu.js</span>
-<span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">Component</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
-
-<span class="k">export</span> <span class="k">default</span> <span class="kd">const</span> <span class="nx">MenuItem</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">children</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">children</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;;</span>
-
-<span class="k">export</span> <span class="k">default</span> <span class="kd">class</span> <span class="nx">Menu</span> <span class="kd">extends</span> <span class="nx">Component</span> <span class="p">{</span>
-  <span class="kd">static</span> <span class="nx">Item</span> <span class="o">=</span> <span class="nx">MenuItem</span><span class="p">;</span>
-
-  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="p">(</span>
-      <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span><span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">children</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-    <span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>Now we can use the dot notation to declare the <code class="language-plaintext highlighter-rouge">MenuItem</code> component:</p>
-
-<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">render</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react-dom</span><span class="dl">"</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">Menu</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./menu</span><span class="dl">"</span><span class="p">;</span>
-
-<span class="kd">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">(</span>
-  <span class="p">&lt;</span><span class="nc">Menu</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nc">Menu</span><span class="p">.</span><span class="nc">Item</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nc">Menu</span><span class="p">.</span><span class="nc">Item</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nc">Menu</span><span class="p">.</span><span class="nc">Item</span><span class="p">&gt;</span>Blog<span class="p">&lt;/</span><span class="nc">Menu</span><span class="p">.</span><span class="nc">Item</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nc">Menu</span><span class="p">.</span><span class="nc">Item</span><span class="p">&gt;</span>About<span class="p">&lt;/</span><span class="nc">Menu</span><span class="p">.</span><span class="nc">Item</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nc">Menu</span><span class="p">&gt;</span>
-<span class="p">);</span>
-
-<span class="nx">render</span><span class="p">(&lt;</span><span class="nc">App</span> <span class="p">/&gt;,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">root</span><span class="dl">"</span><span class="p">));</span>
-</code></pre></div></div>
-
-<p>You can also put the <code class="language-plaintext highlighter-rouge">MenuItem</code> component definition directly within the <code class="language-plaintext highlighter-rouge">Menu</code> class. But this way you can no longer import <code class="language-plaintext highlighter-rouge">MenuItem</code> individually.</p>
-
-<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">Component</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
-
-<span class="k">export</span> <span class="k">default</span> <span class="kd">class</span> <span class="nx">Menu</span> <span class="kd">extends</span> <span class="nx">Component</span> <span class="p">{</span>
-  <span class="kd">static</span> <span class="nx">Item</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">children</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">children</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;;</span>
-
-  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span><span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">children</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><strong>This article is for Demo purpose</strong></p>
-
-<p>The article was originally on <a href="https://github.com/risan/risanb.com/blob/master/content/posts/react-component-with-dot-notation/index.md">this repo</a></p>]]></content><author><name>Meve</name></author><category term="javascript" /><category term="react" /><summary type="html"><![CDATA[Learn how to define a React component that is accessible through the dot notation. A common component pattern to show a parent-child relation.]]></summary></entry></feed>
+<p>So, what you waiting for, just create your own website for free.</p>]]></content><author><name>Meve</name></author><category term="blog" /><category term="netlify" /><category term="jekyll" /><category term="github" /><summary type="html"><![CDATA[All the services are free, a source code this site placed on github repository and intergration with netlify service, another service that you can use is github page for hosting your own static site.]]></summary></entry></feed>
