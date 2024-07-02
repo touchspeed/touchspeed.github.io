@@ -3,7 +3,7 @@ title: Meve
 permalink: /about/
 layout: page
 excerpt: Hello
-comments: false
+comments: true
 ---
 
 你好！<br>
