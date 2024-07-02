@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-02T18:19:33+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">ddr3 mig</title><link href="http://localhost:4000/ddr3-mig/" rel="alternate" type="text/html" title="ddr3 mig" /><published>2024-07-02T15:03:00+07:00</published><updated>2024-07-02T15:03:00+07:00</updated><id>http://localhost:4000/ddr3-mig</id><content type="html" xml:base="http://localhost:4000/ddr3-mig/"><![CDATA[<h2 id="前言">前言</h2>]]></content><author><name>Meve</name></author><category term="FPGA" /><category term="IP" /><category term="FPGA" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">flameshot，平替snipaste</title><link href="http://localhost:4000/flame-shot/" rel="alternate" type="text/html" title="flameshot，平替snipaste" /><published>2024-06-28T19:20:00+07:00</published><updated>2024-06-28T19:20:00+07:00</updated><id>http://localhost:4000/flame-shot</id><content type="html" xml:base="http://localhost:4000/flame-shot/"><![CDATA[<h3 id="前言">前言</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-02T18:30:44+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">ddr3 mig</title><link href="http://localhost:4000/ddr3-mig/" rel="alternate" type="text/html" title="ddr3 mig" /><published>2024-07-02T15:03:00+07:00</published><updated>2024-07-02T15:03:00+07:00</updated><id>http://localhost:4000/ddr3-mig</id><content type="html" xml:base="http://localhost:4000/ddr3-mig/"><![CDATA[<h2 id="前言">前言</h2>]]></content><author><name>Meve</name></author><category term="FPGA" /><category term="IP" /><category term="FPGA" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">flameshot，平替snipaste</title><link href="http://localhost:4000/flame-shot/" rel="alternate" type="text/html" title="flameshot，平替snipaste" /><published>2024-06-28T19:20:00+07:00</published><updated>2024-06-28T19:20:00+07:00</updated><id>http://localhost:4000/flame-shot</id><content type="html" xml:base="http://localhost:4000/flame-shot/"><![CDATA[<h3 id="前言">前言</h3>
 
 <p>snipaste是我在win上经常用到的一个截图软件，操作方便，贴图功能也很便利。 <br />
 由于现在我更多使用linux，便想寻找一个替代品，而flameshot，则是目前我认为linux上最好用的截图软件。 <br />
@@ -46,17 +46,17 @@ ln -snf ../Utilities/Flameshot-12.1.0.x86_64.AppImage ./flameshot <br /></p>
 <h2 id="结束">结束</h2>]]></content><author><name>Meve</name></author><category term="Linux" /><category term="Linux" /><category term="APP" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">IC EDA on Windows using WSL</title><link href="http://localhost:4000/ic-eda-on-windows-using-wsl/" rel="alternate" type="text/html" title="IC EDA on Windows using WSL" /><published>2024-05-07T16:00:00+07:00</published><updated>2024-05-07T16:00:00+07:00</updated><id>http://localhost:4000/ic-eda-on-windows-using-wsl</id><content type="html" xml:base="http://localhost:4000/ic-eda-on-windows-using-wsl/"><![CDATA[<h2 id="前言">前言</h2>
 
 <p>本文记录在wsl上使用eda遇到的一些问题，这是我的wsl版本信息:<br />
-<img src="wsl.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/wsl.png" alt="alt text" /><br />
 基于ubuntu20.04 wsl，安装的synopsys eda大部分版本都是2018。<br />
 如果是ubuntu22.04会遇到一些棘手的问题，难以解决。</p>
 
 <h2 id="痛点">痛点</h2>
 
 <p>最最最难受的一点，wsl每次电脑重启mac会变化，导致synopsys、matlab之类的license失效。<br />
-<img src="lm1.png" alt="alt text" /><br />
-<img src="lm2.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/lm1.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/lm2.png" alt="alt text" /><br />
 下面给出解决方法：<br />
-在Windows中的C:\Users&lt;your_username&gt;目录下创建一个.wslconfig文件，然后在文件中写入如下内容</p>
+在Windows中的C:\Users\<your_username>目录下创建一个.wslconfig文件，然后在文件中写入如下内容</your_username></p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="err">experimental</span><span class="p">]</span><span class="w">
 </span><span class="err">autoMemoryReclaim=gradual</span><span class="w">
@@ -69,54 +69,55 @@ ln -snf ../Utilities/Flameshot-12.1.0.x86_64.AppImage ./flameshot <br /></p>
 <a href="https://unix.stackexchange.com/questions/772303/machine-mac-address-with-ubuntu-on-top-of-wsl2">参考1</a><br />
 <a href="https://github.com/microsoft/WSL/issues/5352">参考2</a><br />
 <a href="https://github.com/microsoft/WSL/issues/5291">参考3</a><br />
-其实我本来是为了解决wsl不走代理的问题，结果发现还可以把eda license mac顺便fix下来。<br /></p>
+<a href="https://github.com/microsoft/WSL/issues/10753">参考4</a><br />
+本来是为了解决wsl不走代理的问题，结果发现这样可以固定eda license mac。<br /></p>
 
 <h2 id="开始">开始</h2>
 
 <p>使用synopsys installer，setup.sh，缺少libXss.so.1，如图:<br />
-<img src="2.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/2.png" alt="alt text" /><br />
 <a href="https://www.cnblogs.com/taitai139/p/14046962.html">参考此文章</a>，安装libXss1:<br />
-<img src="3.png" alt="alt text" /><br /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/3.png" alt="alt text" /><br /></p>
 
 <p>lmgrd提示no such file，sudo apt-get install lsb-core即可解决<br />
-<img src="4.png" alt="alt text" /><br />
-<img src="lsb.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/4.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/lsb.png" alt="alt text" /><br />
 无法创建.flexlm问题:<br />
-<img src="5.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/5.png" alt="alt text" /><br />
 解决:<br />
-<img src="6.png" alt="alt text" /><br /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/6.png" alt="alt text" /><br /></p>
 
 <p>再次lmgrd激活提示端口占用，lmgrd failed to open the tcp port，ps找出进程编号kill掉，再等一段时间就可以再次激活license：<br />
-<img src="7.png" alt="alt text" /><br /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/7.png" alt="alt text" /><br /></p>
 
 <p>dvt正常:<br />
-<img src="dvt.png" alt="alt text" /><br /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/dvt.png" alt="alt text" /><br /></p>
 
 <p>euclide权限问题，提示不能写权限运行，或run with ‘private_install’，这是目录权限问题导致:<br />
-<img src="euclide1.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/euclide1.png" alt="alt text" /><br />
 改下目录权限即可，用户组改为root，sudo chown root xxxx，如图:<br />
-<img src="euclide2.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/euclide2.png" alt="alt text" /><br />
 euclide cannot open display问题<br />
-<img src="euclide3.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/euclide3.png" alt="alt text" /><br />
 进入euclide的eclipse文件夹，sudo vim euclide<br />
-<img src="euclide4.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/euclide4.png" alt="alt text" /><br />
 如图注释掉<br />
-<img src="euclide5.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/euclide5.png" alt="alt text" /><br />
 可以运行:<br />
-<img src="euclide6.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/euclide6.png" alt="alt text" /><br />
 新的问题，暂时无法解决<br />
-<img src="euclide7.png" alt="alt text" /><br /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/euclide7.png" alt="alt text" /><br /></p>
 
 <p>verdi提示syntax error<br />
-<img src="verdi1.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/verdi1.png" alt="alt text" /><br />
 sudo dpkg-reconfigure dash，选择no，遇到新的问题<br />
-<img src="verdi2.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/verdi2.png" alt="alt text" /><br />
 尝试安装libXmu6找不到<br />
-<img src="verdi3.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/verdi3.png" alt="alt text" /><br />
 search一下，发现了吗，so库是libXmu6，需要安装的是libxmu6，这…<br />
-<img src="verdi4.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/verdi4.png" alt="alt text" /><br />
 新的依赖<br />
-<img src="verdi5.png" alt="alt text" /><br /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/verdi5.png" alt="alt text" /><br /></p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:linuxuprising/libpng12
 <span class="nb">sudo </span>apt update
@@ -124,47 +125,47 @@ search一下，发现了吗，so库是libXmu6，需要安装的是libxmu6，这�
 </code></pre></div></div>
 
 <p>nlint，如图安装依赖<br />
-<img src="nlint.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/nlint.png" alt="alt text" /><br />
 nlint -gui，如图安装依赖<br />
-<img src="nlint1.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/nlint1.png" alt="alt text" /><br />
 成功<br />
-<img src="nlint2.png" alt="alt text" /><br /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/nlint2.png" alt="alt text" /><br /></p>
 
 <p>spyglass正常<br />
-<img src="sg.png" alt="alt text" /><br /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/sg.png" alt="alt text" /><br /></p>
 
 <p>formality，安装csh<br />
-<img src="fm.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/fm.png" alt="alt text" /><br />
 新的问题，如图安装依赖libgl1<br />
-<img src="fm1.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/fm1.png" alt="alt text" /><br />
 成功<br />
-<img src="fm2.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/fm2.png" alt="alt text" /><br />
 一个警告<br />
-<img src="fm3.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/fm3.png" alt="alt text" /><br />
 在~/.bashrc中添加，这个还能解决formality、dc交互shell中的上下键乱码<br />
-<img src="fm4.png" alt="alt text" /><br /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/fm4.png" alt="alt text" /><br /></p>
 
 <p>tmax tetramax<br />
-<img src="tmax.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/tmax.png" alt="alt text" /><br />
 解决方法<br />
-<img src="tmax1.png" alt="alt text" /><br />
-<img src="tmax2.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/tmax1.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/tmax2.png" alt="alt text" /><br />
 建立链接<br />
-<img src="tmax3.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/tmax3.png" alt="alt text" /><br />
 安装libmng2<br />
-<img src="tmax4.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/tmax4.png" alt="alt text" /><br />
 建立链接<br />
-<img src="tmax5.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/tmax5.png" alt="alt text" /><br />
 成功<br />
-<img src="tmax6.png" alt="alt text" /><br /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/tmax6.png" alt="alt text" /><br /></p>
 
 <p>lc_shell lib compiler，安装libpulse0<br />
-<img src="lc.png" alt="alt text" /><br /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/lc.png" alt="alt text" /><br /></p>
 
 <p>icc_shell ic compiler，遇到glibc问题<br />
-<img src="icc.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/icc.png" alt="alt text" /><br />
 网上的解决方法，我没有尝试，从ubuntu22.04退回20.04没有此问题<br />
-<img src="icc1.png" alt="alt text" /><br /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/icc1.png" alt="alt text" /><br /></p>
 
 <p>tessent -shell<br /></p>
 
@@ -173,33 +174,33 @@ nlint -gui，如图安装依赖<br />
 </code></pre></div></div>
 
 <p>calibre -gui，invalid operating system<br />
-<img src="calibre.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/calibre.png" alt="alt text" /><br />
 /etc/redhat-release存有以下系统版本内容就不会再报<br />
-<img src="calibre1.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/calibre1.png" alt="alt text" /><br />
 新建文件填入上面的内容，并设置权限<br />
-<img src="calibre2.png" alt="alt text" /><br /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/calibre2.png" alt="alt text" /><br /></p>
 
 <p>Virtuoso，过程比较乱，没有整理<br />
-<img src="image.png" alt="alt text" /><br />
-<img src="image-1.png" alt="alt text" /><br />
-<img src="image-2.png" alt="alt text" /><br />
-<img src="image-3.png" alt="alt text" /><br />
-<img src="image-4.png" alt="alt text" /><br />
-<img src="image-5.png" alt="alt text" /><br />
-<img src="image-6.png" alt="alt text" /><br />
-<img src="image-7.png" alt="alt text" /><br />
-<img src="image-8.png" alt="alt text" /><br />
-<img src="image-9.png" alt="alt text" /><br />
-<img src="image-10.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-1.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-2.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-3.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-4.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-5.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-6.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-7.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-8.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-9.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-10.png" alt="alt text" /><br />
 集成calibre，需要~/.cdsinit<br />
-<img src="image-11.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-11.png" alt="alt text" /><br />
 新建tmp文件夹<br />
-<img src="image-12.png" alt="alt text" /><br />
-<img src="image-13.png" alt="alt text" /><br />
-<img src="image-14.png" alt="alt text" /><br />
-<img src="image-15.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-12.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-13.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-14.png" alt="alt text" /><br />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-15.png" alt="alt text" /><br />
 安装字体<br />
-<img src="image-16.png" alt="alt text" /><br /></p>]]></content><author><name>Meve</name></author><category term="Linux" /><category term="EDA" /><category term="Linux" /><category term="WSL" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">Maths Example with Mathjax</title><link href="http://localhost:4000/maths-example/" rel="alternate" type="text/html" title="Maths Example with Mathjax" /><published>2021-06-17T05:57:49+07:00</published><updated>2021-06-17T05:57:49+07:00</updated><id>http://localhost:4000/maths-example</id><content type="html" xml:base="http://localhost:4000/maths-example/"><![CDATA[<p>Below is an example of maths using mathjax.</p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-05-07-ic-eda-on-windows-using-wsl/image-16.png" alt="alt text" /><br /></p>]]></content><author><name>Meve</name></author><category term="Linux" /><category term="EDA" /><category term="Linux" /><category term="WSL" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">Maths Example with Mathjax</title><link href="http://localhost:4000/maths-example/" rel="alternate" type="text/html" title="Maths Example with Mathjax" /><published>2021-06-17T05:57:49+07:00</published><updated>2021-06-17T05:57:49+07:00</updated><id>http://localhost:4000/maths-example</id><content type="html" xml:base="http://localhost:4000/maths-example/"><![CDATA[<p>Below is an example of maths using mathjax.</p>
 
 <p>Any page needing maths should start with the frontmatter:</p>
 
