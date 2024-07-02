@@ -22,30 +22,6 @@
       "tags"     : "EDA, Linux, WSL",
       "url"      : "/ic-eda-on-windows-using-wsl/",
       "date"     : "2024-05-07 16:00:00 +0700"
-    } ,
-  
-    {
-      "title"    : "Maths Example with Mathjax",
-      "description" : "",
-      "tags"     : "",
-      "url"      : "/maths-example/",
-      "date"     : "2021-06-17 05:57:49 +0700"
-    } ,
-  
-    {
-      "title"    : "Welcome to Jekyll!",
-      "description" : "",
-      "tags"     : "",
-      "url"      : "/welcome-to-jekyll/",
-      "date"     : "2020-08-29 09:29:20 +0700"
-    } ,
-  
-    {
-      "title"    : "How this site was born 👶",
-      "description" : "All the services are free, a source code this site placed on github repository and intergration with netlify service, another service that you can use is github page for hosting your own static site.",
-      "tags"     : "blog, netlify, jekyll, github",
-      "url"      : "/how-this-site-was-made/",
-      "date"     : "2018-09-28 09:45:47 +0700"
     } 
   
 ]
