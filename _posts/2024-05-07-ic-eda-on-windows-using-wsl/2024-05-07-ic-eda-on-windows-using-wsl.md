@@ -172,6 +172,6 @@ Virtuoso，过程比较乱，没有整理<br>
 
 
 ## 最后
-折腾了很久，最后还是用回Linux实机，顺便把我用了几年的kubuntu本子换成了Rocky Linux，虽然ubuntu系列在娱乐方面有优势，但是最近我遇到了一个关于vivado的bug，让我直接选择奔向rehel系。<br>
+折腾了很久，最后还是用回Linux实机，顺便把我用了几年的kubuntu本子换成了Rocky Linux，虽然ubuntu系列在娱乐方面有优势，但是最近我遇到了一个关于vivado的bug，让我直接选择奔向rhel系。<br>
 环境迁移倒是很简单，备份一下home，再把需要的文件解压到新系统就可以，EDA不需要安装可以直接运行遇到依赖问题修复下就可以，repoquery --nvr --whatprovides真的很方便。<br>
-至于nvidia驱动，就没有ubuntu那么方便，折腾半天才把驱动跑起来:D
+而nvidia驱动方面，就没有ubuntu那么方便，折腾半天才把驱动跑起来:D
