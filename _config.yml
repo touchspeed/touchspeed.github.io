@@ -13,8 +13,10 @@ mode: dark # default theme "dark" | "light"
 author:
   name: Meve # author name
   bio: >- # tell to the world 
-    Hello！Welcome to my blog.
-    This blog is still under building.
+    Hello！Welcome to my blog. <br>
+    你好！欢迎访问我的blog。 <br>
+    This blog is still under building. <br>
+    blog还在建设中，我或许会发一些乱七八糟的帖子 : )<br>
   username: touchspeed # general username
   github: touchspeed # github username
   twitter: null # twitter username
