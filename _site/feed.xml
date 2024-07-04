@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-04T19:55:13+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">ddr3 mig</title><link href="http://localhost:4000/ddr3-mig/" rel="alternate" type="text/html" title="ddr3 mig" /><published>2024-07-02T15:03:00+07:00</published><updated>2024-07-02T15:03:00+07:00</updated><id>http://localhost:4000/ddr3-mig</id><content type="html" xml:base="http://localhost:4000/ddr3-mig/"><![CDATA[<h2 id="前言">前言</h2>]]></content><author><name>Meve</name></author><category term="FPGA" /><category term="IP" /><category term="FPGA" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">flameshot，平替snipaste</title><link href="http://localhost:4000/flame-shot/" rel="alternate" type="text/html" title="flameshot，平替snipaste" /><published>2024-06-28T19:20:00+07:00</published><updated>2024-06-28T19:20:00+07:00</updated><id>http://localhost:4000/flame-shot</id><content type="html" xml:base="http://localhost:4000/flame-shot/"><![CDATA[<h3 id="前言">前言</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-04T22:17:00+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">部分工作内容展示</title><link href="http://localhost:4000/work-prjs/" rel="alternate" type="text/html" title="部分工作内容展示" /><published>2024-07-03T14:00:00+07:00</published><updated>2024-07-03T14:00:00+07:00</updated><id>http://localhost:4000/work-prjs</id><content type="html" xml:base="http://localhost:4000/work-prjs/"><![CDATA[<h2 id="部分工作内容展示">部分工作内容展示</h2>
+
+<p>一些工作内容或不便展示，这里只作部分展示<br /></p>
+
+<h2 id="-dsc-ip-simulation--integration-">● DSC IP Simulation &amp; Integration <br /></h2>
+
+<p>dsc enc dec structure<br />
+<img src="1.png" alt="alt text" /><br />
+<img src="2.png" alt="alt text" /><br /></p>
+
+<p>由于wholechip基于smic .11工艺，需要使用smic .11 memory compiler产生memory替换ip环境自带的tsmc memory<br />
+<img src="3.png" alt="alt text" /><br /></p>
+
+<p>由于ip自带的部分ram depth跑不满，自己产生ram时可以产生小一点的替换，这就可以节省一点面积。而部分自带的ram虽然需要的depth比较小，但我们的mc工具限制了minimum depth，所以即使有部分浪费也只能使用。<br />
+<img src="4.png" alt="alt text" /><br /></p>
+
+<p>单口ram和双口ram选用也要分情况，像ip自带的128x128的这种ram，smic .11 mc能产生的maximum bits为64(两个ram一组即可)，而对于depth，虽然mc可以产生128x64的双口ram，但最终面积比256x64的单口ram面积还大，所以最后选用256x64的单口ram以节省面积。<br />
+<img src="5.png" alt="alt text" /><br />
+<img src="6.png" alt="alt text" /><br />
+<img src="7.png" alt="alt text" /><br /></p>
+
+<h2 id="-2d-scaler">● 2D Scaler<br /></h2>
+<p>Example of 2D Scaler for 1920x1080 scale down to 1900x800<br />
+<img src="8.png" alt="alt text" /><br />
+scale down structure<br />
+<img src="9.png" alt="alt text" /><br />
+scale up structure<br />
+<img src="10.png" alt="alt text" /><br /></p>
+
+<h2 id="-tcon-project-mpw-tapeout">● TCON Project (MPW Tapeout)<br /></h2>
+
+<p>tcon to panel using gowin fpga<br />
+<img src="11.png" alt="alt text" /><br />
+tcon structre<br />
+<img src="12.png" alt="alt text" /><br />
+lvds rx structure<br />
+<img src="13.png" alt="alt text" /><br />
+mini-lvds tx structure<br />
+<img src="14.png" alt="alt text" /><br /></p>
+
+<h2 id="-bt656-decoder">● BT656 Decoder<br /></h2>
+
+<p><img src="15.png" alt="alt text" /><br />
+<img src="16.png" alt="alt text" /><br /></p>]]></content><author><name>Meve</name></author><category term="JOB" /><category term="JOB" /><summary type="html"><![CDATA[部分工作内容展示]]></summary></entry><entry><title type="html">ddr3 mig</title><link href="http://localhost:4000/ddr3-mig/" rel="alternate" type="text/html" title="ddr3 mig" /><published>2024-07-02T15:03:00+07:00</published><updated>2024-07-02T15:03:00+07:00</updated><id>http://localhost:4000/ddr3-mig</id><content type="html" xml:base="http://localhost:4000/ddr3-mig/"><![CDATA[<h2 id="前言">前言</h2>]]></content><author><name>Meve</name></author><category term="FPGA" /><category term="IP" /><category term="FPGA" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">flameshot，平替snipaste</title><link href="http://localhost:4000/flame-shot/" rel="alternate" type="text/html" title="flameshot，平替snipaste" /><published>2024-06-28T19:20:00+07:00</published><updated>2024-06-28T19:20:00+07:00</updated><id>http://localhost:4000/flame-shot</id><content type="html" xml:base="http://localhost:4000/flame-shot/"><![CDATA[<h3 id="前言">前言</h3>
 
 <p>snipaste是我在win上经常用到的一个截图软件，操作方便，贴图功能也很便利。 <br />
 由于现在我更多使用linux，便想寻找一个替代品，而flameshot，则是目前我认为linux上最好用的截图软件。 <br />

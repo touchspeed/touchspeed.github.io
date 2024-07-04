@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "部分工作内容展示",
+      "description" : "",
+      "tags"     : "JOB",
+      "url"      : "/work-prjs/",
+      "date"     : "2024-07-03 14:00:00 +0700"
+    } ,
+  
+    {
       "title"    : "ddr3 mig",
       "description" : "",
       "tags"     : "IP, FPGA",
