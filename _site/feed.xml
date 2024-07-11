@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-11T15:33:14+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">unrar in rocky linux</title><link href="http://localhost:4000/linux-rar/" rel="alternate" type="text/html" title="unrar in rocky linux" /><published>2024-07-06T15:28:00+07:00</published><updated>2024-07-06T15:28:00+07:00</updated><id>http://localhost:4000/linux-rar</id><content type="html" xml:base="http://localhost:4000/linux-rar/"><![CDATA[<h2 id="前言">前言</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-11T17:14:04+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">Conv Basic</title><link href="http://localhost:4000/conv-basic/" rel="alternate" type="text/html" title="Conv Basic" /><published>2024-07-11T15:47:00+07:00</published><updated>2024-07-11T15:47:00+07:00</updated><id>http://localhost:4000/conv-basic</id><content type="html" xml:base="http://localhost:4000/conv-basic/"><![CDATA[<p>浅显易懂
+<a href="https://zhuanlan.zhihu.com/p/694356231">卷积运算扫盲学习-硬件基础</a>
+https://animatedai.github.io/</p>]]></content><author><name>Meve</name></author><summary type="html"><![CDATA[浅显易懂 卷积运算扫盲学习-硬件基础 https://animatedai.github.io/]]></summary></entry><entry><title type="html">unrar in rocky linux</title><link href="http://localhost:4000/linux-rar/" rel="alternate" type="text/html" title="unrar in rocky linux" /><published>2024-07-06T15:28:00+07:00</published><updated>2024-07-06T15:28:00+07:00</updated><id>http://localhost:4000/linux-rar</id><content type="html" xml:base="http://localhost:4000/linux-rar/"><![CDATA[<h2 id="前言">前言</h2>
 
 <p>有一些rar文件需要解压，由于不需要rar压缩功能，所以我选择安装免费版。<br />
 在 Linux 上使用的 unrar 工具有两种版本：一个是免费版本，另一个是商业版本。免费版本有一些限制，主要是它只能解压 RAR 文件，而不能创建 RAR 文件。</p>
@@ -117,28 +119,28 @@ mini-lvds tx structure<br />
 
 <p>由于DDR3速度高、吞吐量大、双边沿、命令复杂、从命令到数据延时时间长以及刷新、预充电等诸多内容，因此DDR3使用比较复杂。
 鉴于此，在当前的FPGA与DDR3的应用中将DDR3物理层读写（DDR3控制器）与应用层分开，使得物理层控制器有专门的人或单位（如Xilinx，Intel等）维护，用户只关心应用层与控制器之间的读写，而不需要直接与底层的DDR3信号打交道，这样就简化了用户使用DDR3的难度，如图
-<img src="image.png" alt="alt text" /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image.png" alt="alt text" /></p>
 
 <p>从上图，可以看出FPGA DDR CONTROLLER起到隔离APP与DDR3接口的作用，同时又是FPGA APP与DDR3沟通的桥梁。从APP的角度看，APP 利用 Control、Address、data等总线所访问的就是DDR3本身，而并不知道DDR控制器的存在，所以DDR控制器起到了翻译、解释和桥梁的作用，如图所示
-<img src="image-1.png" alt="alt text" /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-1.png" alt="alt text" /></p>
 
 <p>首先建立一个空的工程</p>
 
-<p><img src="image-2.png" alt="alt text" /></p>
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-2.png" alt="alt text" /></p>
 
 <p>打开IP catalog 窗口 ，双击IP Catalog
-<img src="image-3.png" alt="alt text" /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-3.png" alt="alt text" /></p>
 
 <p>选择DDR控制器IPcore
 在IP Catalog 对话框中找到 Memories&amp; Storage Elements–&gt;Memory Interface Generator–&gt;Memory Interface Generator(MIG 7 Series)
-<img src="image-4.png" alt="alt text" /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-4.png" alt="alt text" /></p>
 
 <p>点击 Next，在新界面中对MIG（Memory Interface Generator)及项目中使用的器件（FPGA），软件工具，开发语言（Verilog）进行了描述，如图所示。
 点击Next
-<img src="image-5.png" alt="alt text" /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-5.png" alt="alt text" /></p>
 
 <p>MIG（Memory Interface Generator) 新界面如图
-<img src="image-6.png" alt="alt text" /></p>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-6.png" alt="alt text" /></p>
 
 <p>选项意思如下：</p>
 
@@ -179,20 +181,20 @@ Verify Pin Changes and Update Design
 
 <p>DDR控制器生成器向导可以根据工程选择的器件推断出在同样封装的器件家族中还有哪些器件可以与工程中使用的器件管脚兼容，如果选择兼容的器件，将来该控制器可在其它兼容器件上使用，如图所示。点击Next.</p>
 
-<p><img src="image-7.png" alt="alt text" /></p>
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-7.png" alt="alt text" /></p>
 
 <p>下一步</p>
 
 <p>DDR 器件选择
 如图，xc7a100tfgg676-2器件支持DDR3，DDR2以及LPDDR2。本例选择DDR3 SDRAM。
-<img src="image-8.png" alt="alt text" />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-8.png" alt="alt text" />
 DDR3L 与LPDDR3器件虽然不能被ARTIX系列器件支持，但其它7系列器件可以支持，如Kintex 系列FPGA器件。
 DDR3L :低电压系列，接口电压1.35V。
 LPDDR3:是一种用在移动设备上的功耗更低，体积更小的器件，电压1.2V。</p>
 
 <p>下一步</p>
 
-<p><img src="image-9.png" alt="alt text" /></p>
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-9.png" alt="alt text" /></p>
 
 <p>Clock Period
 输入时钟周改为2500PS（400MHz），对于ARTIX系列最高可以为400HZ，但是向下兼容。</p>
@@ -213,10 +215,10 @@ LPDDR3:是一种用在移动设备上的功耗更低，体积更小的器件，�
 
 <p>ORDERING 命令执行顺序 有Normal和Strict 两种。Strick严格按照给定的顺序执行。Normal模式下，DDR控制器可以重新调整执行顺序以达到更高的读写效率。</p>
 
-<p><img src="image-10.png" alt="alt text" />
-<img src="image-11.png" alt="alt text" /></p>
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-10.png" alt="alt text" />
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-11.png" alt="alt text" /></p>
 
-<p><img src="image-12.png" alt="alt text" /></p>
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-12.png" alt="alt text" /></p>
 
 <p>DDR控制器其它参数设置</p>
 
@@ -232,11 +234,11 @@ LPDDR3:是一种用在移动设备上的功耗更低，体积更小的器件，�
 
 <p>地址映射顺序，选择ROW+BANK+COLLUM</p>
 
-<p><img src="image-13.png" alt="alt text" /></p>
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-13.png" alt="alt text" /></p>
 
 <p>点击Next</p>
 
-<p><img src="image-14.png" alt="alt text" /></p>
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-14.png" alt="alt text" /></p>
 
 <p>如图设置如下：</p>
 
@@ -256,7 +258,7 @@ LPDDR3:是一种用在移动设备上的功耗更低，体积更小的器件，�
 
 <p>下一步Next</p>
 
-<p><img src="image-15.png" alt="alt text" /></p>
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-15.png" alt="alt text" /></p>
 
 <p>下一步Next</p>
 
@@ -264,15 +266,15 @@ LPDDR3:是一种用在移动设备上的功耗更低，体积更小的器件，�
 
 <p>ERROR : Address ports can be allocated to non memory byte group pins (not in T0, T1, T2, or T3) if and only if its adjacent byte is non Data byte group (i.e either Address/Control or empty) and it should contain at least one unallocated pin or allocated with memory clock pair. Refer to UG586 and AR# 45588 for more information.</p>
 
-<p><img src="image-16.png" alt="alt text" /></p>
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-16.png" alt="alt text" /></p>
 
 <p>不确定是不是此开发板DDR3的设计错误</p>
 
-<p><img src="image-17.png" alt="alt text" /></p>
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-17.png" alt="alt text" /></p>
 
 <p>先采用新设计创建IP，再将IO Ports改为硬件对应连接，Implementation出现Implementation Complete，Failed Nets!</p>
 
-<p><img src="image-18.png" alt="alt text" /></p>
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-18.png" alt="alt text" /></p>
 
 <p>暂时还没能解决 [07_11_2024]</p>]]></content><author><name>Meve</name></author><category term="FPGA" /><category term="IP" /><category term="FPGA" /><summary type="html"><![CDATA[FPGA DDR3控制器]]></summary></entry><entry><title type="html">flameshot，平替snipaste</title><link href="http://localhost:4000/flame-shot/" rel="alternate" type="text/html" title="flameshot，平替snipaste" /><published>2024-06-28T19:20:00+07:00</published><updated>2024-06-28T19:20:00+07:00</updated><id>http://localhost:4000/flame-shot</id><content type="html" xml:base="http://localhost:4000/flame-shot/"><![CDATA[<h3 id="前言">前言</h3>
 
