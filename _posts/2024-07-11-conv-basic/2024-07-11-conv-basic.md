@@ -8,6 +8,9 @@ tags: []
 summary: 
 ---
 
-浅显易懂
+等待总结
+
+浅显易懂的说明<br>
 [卷积运算扫盲学习-硬件基础](https://zhuanlan.zhihu.com/p/694356231)
-https://animatedai.github.io/
+
+[animatedai](https://animatedai.github.io/)

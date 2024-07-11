@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "rpm update wps",
+      "description" : "",
+      "tags"     : "Linux, Tips",
+      "url"      : "/rpm-update-wps/",
+      "date"     : "2024-07-11 16:50:00 +0700"
+    } ,
+  
+    {
       "title"    : "Conv Basic",
       "description" : "",
       "tags"     : "",
@@ -9,7 +17,7 @@
     } ,
   
     {
-      "title"    : "unrar in rocky linux",
+      "title"    : "unrar on rocky linux",
       "description" : "",
       "tags"     : "Linux",
       "url"      : "/linux-rar/",

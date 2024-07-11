@@ -1,0 +1,24 @@
+I"�<h2 id="前言">前言</h2>
+
+<p>今天使用rocky时，发现wps有更新，每次打开都提示，那就更新一下吧。</p>
+
+<p><strong><em>BTW：wps for linux会一直保持干净免费吗…</em></strong></p>
+
+<h2 id="开始">开始</h2>
+
+<p>去 <a href="https://linux.wps.cn/">wps for linux官网</a> 下载一下rpm包，准备安装。</p>
+
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-11-rpm-update-wps/image-2.png" alt="alt text" /></p>
+
+<p>使用rpm -ivh安装，提示冲突
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-11-rpm-update-wps/image.png" alt="alt text" /></p>
+
+<p>使用rpm -Uvh，成功
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-11-rpm-update-wps/image-1.png" alt="alt text" /></p>
+
+<h2 id="总结">总结</h2>
+
+<p>初次安装，使用rpm -ivh</p>
+
+<p>更新应用，使用rpm -Uvh</p>
+:ET

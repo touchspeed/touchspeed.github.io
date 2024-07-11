@@ -1,4 +1,4 @@
-I"�+<h2 id="fpga-ddr3控制器">FPGA DDR3控制器</h2>
+I"I+<h2 id="fpga-ddr3控制器">FPGA DDR3控制器</h2>
 
 <h2 id="前言">前言</h2>
 
@@ -43,7 +43,7 @@ Verify Pin Changes and Update Design
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Component Name 
     DDR控制器组件的名称，将mig_7 series_0修改成DDR3_INTF，将在工程目录内创建DDR_INT的子目录，并在该目录下生成”example_design”,”user_design”与”docs”等目录及文件。
 
-    user_design文件包含了生成的DDR控制器的接口。该接口包含两个部分，（1）与DDR3 芯片的接口（2）控制器与APP的接口。如图1所示。
+    user_design文件包含了生成的DDR控制器的接口。该接口包含两个部分，（1）与DDR3 芯片的接口（2）控制器与APP的接口。如图所示。
     example_design 除了包含接口外还添加了一个简单的应用案例，可用来学习或模仿如何使用新生成的控制器。
     docs 包含了控制器的说明文档。
 </code></pre></div></div>
@@ -51,13 +51,13 @@ Verify Pin Changes and Update Design
 <hr />
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Multi-Controller
-    可以选择一个也可以选择多个（最多可以8个），根据硬件电路决定。本例选择一个。
+    可以选择一个也可以选择多个（最多可以8个），根据硬件电路决定。这里选择一个。
 </code></pre></div></div>
 
 <hr />
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AXI4 Interface
-    AXI接口,如果熟悉AXI接口或与该控制器对接的部件使用AXI接口，则选择AXI接口。如果不选AXI则使用传统的控制接口。本例测试不采用AXI接口，因此不选AXI接口。后续有专门的文章介绍AXI总线的使用。
+    AXI接口,如果熟悉AXI接口或与该控制器对接的部件使用AXI接口，则选择AXI接口。如果不选AXI则使用传统的控制接口。这里测试就不采用AXI接口。
 </code></pre></div></div>
 
 <p>下一步</p>
@@ -72,8 +72,9 @@ Verify Pin Changes and Update Design
 
 <p>DDR 器件选择
 如图，xc7a100tfgg676-2器件支持DDR3，DDR2以及LPDDR2。本例选择DDR3 SDRAM。
-<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-8.png" alt="alt text" />
-DDR3L 与LPDDR3器件虽然不能被ARTIX系列器件支持，但其它7系列器件可以支持，如Kintex 系列FPGA器件。
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-8.png" alt="alt text" /></p>
+
+<p>DDR3L 与LPDDR3器件虽然不能被ARTIX系列器件支持，但其它7系列器件可以支持，如Kintex 系列FPGA器件。
 DDR3L :低电压系列，接口电压1.35V。
 LPDDR3:是一种用在移动设备上的功耗更低，体积更小的器件，电压1.2V。</p>
 
@@ -84,7 +85,7 @@ LPDDR3:是一种用在移动设备上的功耗更低，体积更小的器件，�
 <p>Clock Period
 输入时钟周改为2500PS（400MHz），对于ARTIX系列最高可以为400HZ，但是向下兼容。</p>
 
-<p>控制器与PHY（物理层）的时钟比例4：1，是指FPGA提供给DDR3的时钟频率与控制器时钟频率的比率。这个比率只能选择4：1或2：1。这个选择对于控制器与APP接口数据宽度有很大的关系，如图2，图3所示。3000</p>
+<p>控制器与PHY（物理层）的时钟比例4：1，是指FPGA提供给DDR3的时钟频率与控制器时钟频率的比率。这个比率只能选择4：1或2：1。这个选择对于控制器与APP接口数据宽度有很大的关系。</p>
 
 <p>VCCAUX的电压设为1.8V，对于Kintex系列，如果FPGA使用HP BANK（如BANK32，BANK33等），VCCAUX设为2.0V 可以提高控制器的读写性能，如可以设置CK时钟为800M或更高。</p>
 
@@ -96,7 +97,7 @@ LPDDR3:是一种用在移动设备上的功耗更低，体积更小的器件，�
 
 <p>Data Mask, 是否产生DDR3 DM 控制脚。如果不用DM，可以节省FPGA的管脚。</p>
 
-<p>BANK Mechine数量， 选择 -4或选择-8等，选择范围2–8。数量越大，耗费FPGA资源越多，但效率越高。主要的原因是在连续读写时，在对一个DDR3 bank读写时可以同时打开其它的DDR3 bank，可以节省由于BANK切换时的预充电（Precharge ）及激活（Activating)时间。</p>
+<p>BANK Mechine数量， 选择 -4或选择-8等，选择范围2–8。数量越大，耗费FPGA资源越多，但效率越高。主要的原因是在连续读写时，在对一个DDR3 bank读写时可以同时打开其它的DDR3 bank，可以节省由于BANK切换时的预充电 (Precharge) 及激活 (Activating) 时间。</p>
 
 <p>ORDERING 命令执行顺序 有Normal和Strict 两种。Strick严格按照给定的顺序执行。Normal模式下，DDR控制器可以重新调整执行顺序以达到更高的读写效率。</p>
 

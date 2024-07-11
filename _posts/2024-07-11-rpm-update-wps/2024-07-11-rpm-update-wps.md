@@ -1,7 +1,7 @@
 ---
 layout: post
 title: rpm update wps
-date: 2024-07-11 17:50
+date: 2024-07-11 16:50
 category: Linux 
 author: Meve
 tags: [Linux,Tips]
