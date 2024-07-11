@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-04T22:30:43+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">部分工作内容展示</title><link href="http://localhost:4000/work-prjs/" rel="alternate" type="text/html" title="部分工作内容展示" /><published>2024-07-03T14:00:00+07:00</published><updated>2024-07-03T14:00:00+07:00</updated><id>http://localhost:4000/work-prjs</id><content type="html" xml:base="http://localhost:4000/work-prjs/"><![CDATA[<h2 id="部分工作内容展示">部分工作内容展示</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-11T15:33:14+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">unrar in rocky linux</title><link href="http://localhost:4000/linux-rar/" rel="alternate" type="text/html" title="unrar in rocky linux" /><published>2024-07-06T15:28:00+07:00</published><updated>2024-07-06T15:28:00+07:00</updated><id>http://localhost:4000/linux-rar</id><content type="html" xml:base="http://localhost:4000/linux-rar/"><![CDATA[<h2 id="前言">前言</h2>
+
+<p>有一些rar文件需要解压，由于不需要rar压缩功能，所以我选择安装免费版。<br />
+在 Linux 上使用的 unrar 工具有两种版本：一个是免费版本，另一个是商业版本。免费版本有一些限制，主要是它只能解压 RAR 文件，而不能创建 RAR 文件。</p>
+
+<h2 id="免费版本-unrar">免费版本 (unrar)</h2>
+
+<p>免费版本的 unrar 是开源的，可以用于解压 RAR 文件。这个版本可以通过大多数 Linux 发行版的包管理器安装。
+安装免费版本 unrar</p>
+
+<ol>
+  <li>
+    <p>启用 EPEL 仓库</p>
+
+    <p>首先，确保 EPEL 仓库已启用。打开终端并运行以下命令：</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo dnf install epel-release
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>安装 unrar</p>
+
+    <p>然后，安装 unrar 包：</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo dnf install unrar
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>解压 RAR 文件</p>
+
+    <p>安装完成后，就可以使用 unrar 解压 RAR 文件。例如，假设有一个名为 example.rar 的文件：</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> unrar x example.rar
+</code></pre></div>    </div>
+
+    <p>x 选项用于提取文件并保持目录结构。</p>
+  </li>
+</ol>
+
+<h2 id="商业版本-rar">商业版本 (rar)</h2>
+
+<p>商业版本的 rar 工具可以用于创建和解压 RAR 文件。这个版本不是免费的，需要购买许可证才能合法使用。
+如果只需要安装</p>
+
+<ol>
+  <li>访问 <a href="https://www.rarlab.com/download.htm">WinRAR 官方网站</a> 下载适用于 Linux 的 rar 工具。</li>
+  <li>下载后解压文件并安装。</li>
+</ol>
+
+<p>例如，假设下载的文件名为 rarlinux-x64-701.tar.gz：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tar -xvf rarlinux-x64-701.tar.gz
+cd rar
+sudo cp rar unrar /usr/local/bin/
+</code></pre></div></div>
+
+<p>使用示例
+使用 unrar 解压文件</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unrar x example.rar
+</code></pre></div></div>
+
+<p>使用 rar 创建文件</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rar a example.rar file1 file2
+</code></pre></div></div>
+
+<h2 id="总结">总结</h2>
+
+<p>如果只需要解压 RAR 文件，可以使用免费的 unrar 工具。<br />
+如果需要创建 RAR 文件，需要购买并安装商业版本的 rar 工具。</p>]]></content><author><name>Meve</name></author><category term="Linux" /><category term="Linux" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">部分工作内容展示</title><link href="http://localhost:4000/work-prjs/" rel="alternate" type="text/html" title="部分工作内容展示" /><published>2024-07-03T14:00:00+07:00</published><updated>2024-07-03T14:00:00+07:00</updated><id>http://localhost:4000/work-prjs</id><content type="html" xml:base="http://localhost:4000/work-prjs/"><![CDATA[<h2 id="部分工作内容展示">部分工作内容展示</h2>
 
 <p>一些工作内容或不便展示，这里只作部分展示<br /></p>
 
@@ -41,7 +111,170 @@ mini-lvds tx structure<br />
 <h2 id="-bt656-decoder">● BT656 Decoder<br /></h2>
 
 <p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-04-work-prjs/15.png" alt="alt text" /><br />
-<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-04-work-prjs/16.png" alt="alt text" /><br /></p>]]></content><author><name>Meve</name></author><category term="JOB" /><category term="JOB" /><summary type="html"><![CDATA[部分工作内容展示]]></summary></entry><entry><title type="html">ddr3 mig</title><link href="http://localhost:4000/ddr3-mig/" rel="alternate" type="text/html" title="ddr3 mig" /><published>2024-07-02T15:03:00+07:00</published><updated>2024-07-02T15:03:00+07:00</updated><id>http://localhost:4000/ddr3-mig</id><content type="html" xml:base="http://localhost:4000/ddr3-mig/"><![CDATA[<h2 id="前言">前言</h2>]]></content><author><name>Meve</name></author><category term="FPGA" /><category term="IP" /><category term="FPGA" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">flameshot，平替snipaste</title><link href="http://localhost:4000/flame-shot/" rel="alternate" type="text/html" title="flameshot，平替snipaste" /><published>2024-06-28T19:20:00+07:00</published><updated>2024-06-28T19:20:00+07:00</updated><id>http://localhost:4000/flame-shot</id><content type="html" xml:base="http://localhost:4000/flame-shot/"><![CDATA[<h3 id="前言">前言</h3>
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-04-work-prjs/16.png" alt="alt text" /><br /></p>]]></content><author><name>Meve</name></author><category term="JOB" /><category term="JOB" /><summary type="html"><![CDATA[部分工作内容展示]]></summary></entry><entry><title type="html">Xilinx FPGA ddr3 MIG 控制器</title><link href="http://localhost:4000/ddr3-mig/" rel="alternate" type="text/html" title="Xilinx FPGA ddr3 MIG 控制器" /><published>2024-07-02T15:03:00+07:00</published><updated>2024-07-02T15:03:00+07:00</updated><id>http://localhost:4000/ddr3-mig</id><content type="html" xml:base="http://localhost:4000/ddr3-mig/"><![CDATA[<h2 id="fpga-ddr3控制器">FPGA DDR3控制器</h2>
+
+<h2 id="前言">前言</h2>
+
+<p>由于DDR3速度高、吞吐量大、双边沿、命令复杂、从命令到数据延时时间长以及刷新、预充电等诸多内容，因此DDR3使用比较复杂。
+鉴于此，在当前的FPGA与DDR3的应用中将DDR3物理层读写（DDR3控制器）与应用层分开，使得物理层控制器有专门的人或单位（如Xilinx，Intel等）维护，用户只关心应用层与控制器之间的读写，而不需要直接与底层的DDR3信号打交道，这样就简化了用户使用DDR3的难度，如图
+<img src="image.png" alt="alt text" /></p>
+
+<p>从上图，可以看出FPGA DDR CONTROLLER起到隔离APP与DDR3接口的作用，同时又是FPGA APP与DDR3沟通的桥梁。从APP的角度看，APP 利用 Control、Address、data等总线所访问的就是DDR3本身，而并不知道DDR控制器的存在，所以DDR控制器起到了翻译、解释和桥梁的作用，如图所示
+<img src="image-1.png" alt="alt text" /></p>
+
+<p>首先建立一个空的工程</p>
+
+<p><img src="image-2.png" alt="alt text" /></p>
+
+<p>打开IP catalog 窗口 ，双击IP Catalog
+<img src="image-3.png" alt="alt text" /></p>
+
+<p>选择DDR控制器IPcore
+在IP Catalog 对话框中找到 Memories&amp; Storage Elements–&gt;Memory Interface Generator–&gt;Memory Interface Generator(MIG 7 Series)
+<img src="image-4.png" alt="alt text" /></p>
+
+<p>点击 Next，在新界面中对MIG（Memory Interface Generator)及项目中使用的器件（FPGA），软件工具，开发语言（Verilog）进行了描述，如图所示。
+点击Next
+<img src="image-5.png" alt="alt text" /></p>
+
+<p>MIG（Memory Interface Generator) 新界面如图
+<img src="image-6.png" alt="alt text" /></p>
+
+<p>选项意思如下：</p>
+
+<p>MIG Output Option</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create Design
+    该选项包含生成RTL，XDC， implementation 及simulation文件，可以用来仿真测试，也可以作为整个工程的一个部件。其中XDC仅仅针对DDR控制器的约束文件。
+
+Verify Pin Changes and Update Design
+    该选项针对以前已经生成的DDR控制器，由于管脚的更改等因素需要重新验证。该选项也会重新生成新的DDR控制器。
+</code></pre></div></div>
+
+<hr />
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Component Name 
+    DDR控制器组件的名称，将mig_7 series_0修改成DDR3_INTF，将在工程目录内创建DDR_INT的子目录，并在该目录下生成”example_design”,”user_design”与”docs”等目录及文件。
+
+    user_design文件包含了生成的DDR控制器的接口。该接口包含两个部分，（1）与DDR3 芯片的接口（2）控制器与APP的接口。如图1所示。
+    example_design 除了包含接口外还添加了一个简单的应用案例，可用来学习或模仿如何使用新生成的控制器。
+    docs 包含了控制器的说明文档。
+</code></pre></div></div>
+
+<hr />
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Multi-Controller
+    可以选择一个也可以选择多个（最多可以8个），根据硬件电路决定。本例选择一个。
+</code></pre></div></div>
+
+<hr />
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AXI4 Interface
+    AXI接口,如果熟悉AXI接口或与该控制器对接的部件使用AXI接口，则选择AXI接口。如果不选AXI则使用传统的控制接口。本例测试不采用AXI接口，因此不选AXI接口。后续有专门的文章介绍AXI总线的使用。
+</code></pre></div></div>
+
+<p>下一步</p>
+
+<p>管脚兼容性FPGA器件选择</p>
+
+<p>DDR控制器生成器向导可以根据工程选择的器件推断出在同样封装的器件家族中还有哪些器件可以与工程中使用的器件管脚兼容，如果选择兼容的器件，将来该控制器可在其它兼容器件上使用，如图所示。点击Next.</p>
+
+<p><img src="image-7.png" alt="alt text" /></p>
+
+<p>下一步</p>
+
+<p>DDR 器件选择
+如图，xc7a100tfgg676-2器件支持DDR3，DDR2以及LPDDR2。本例选择DDR3 SDRAM。
+<img src="image-8.png" alt="alt text" />
+DDR3L 与LPDDR3器件虽然不能被ARTIX系列器件支持，但其它7系列器件可以支持，如Kintex 系列FPGA器件。
+DDR3L :低电压系列，接口电压1.35V。
+LPDDR3:是一种用在移动设备上的功耗更低，体积更小的器件，电压1.2V。</p>
+
+<p>下一步</p>
+
+<p><img src="image-9.png" alt="alt text" /></p>
+
+<p>Clock Period
+输入时钟周改为2500PS（400MHz），对于ARTIX系列最高可以为400HZ，但是向下兼容。</p>
+
+<p>控制器与PHY（物理层）的时钟比例4：1，是指FPGA提供给DDR3的时钟频率与控制器时钟频率的比率。这个比率只能选择4：1或2：1。这个选择对于控制器与APP接口数据宽度有很大的关系，如图2，图3所示。3000</p>
+
+<p>VCCAUX的电压设为1.8V，对于Kintex系列，如果FPGA使用HP BANK（如BANK32，BANK33等），VCCAUX设为2.0V 可以提高控制器的读写性能，如可以设置CK时钟为800M或更高。</p>
+
+<p>Memory的类型选择DDR3芯片（ Components）或内存条RDIMMS，LRDIMMS，UDIMMS，SODIMMS等。这里选择芯片（component）。并在下拉框中选择合适的器件，如果找不到对应的器件，则需要创建一个新器件。</p>
+
+<p>DDR3电压1.5V，如果使用DDR2应为1.8V。</p>
+
+<p>ECC （disable），只有72数据口线宽度才支持ECC，其中数据64位，ECC为8位。</p>
+
+<p>Data Mask, 是否产生DDR3 DM 控制脚。如果不用DM，可以节省FPGA的管脚。</p>
+
+<p>BANK Mechine数量， 选择 -4或选择-8等，选择范围2–8。数量越大，耗费FPGA资源越多，但效率越高。主要的原因是在连续读写时，在对一个DDR3 bank读写时可以同时打开其它的DDR3 bank，可以节省由于BANK切换时的预充电（Precharge ）及激活（Activating)时间。</p>
+
+<p>ORDERING 命令执行顺序 有Normal和Strict 两种。Strick严格按照给定的顺序执行。Normal模式下，DDR控制器可以重新调整执行顺序以达到更高的读写效率。</p>
+
+<p><img src="image-10.png" alt="alt text" />
+<img src="image-11.png" alt="alt text" /></p>
+
+<p><img src="image-12.png" alt="alt text" /></p>
+
+<p>DDR控制器其它参数设置</p>
+
+<p>输入频率，设置合适的输入频率，这里使用100MHz.</p>
+
+<p>突发类型（Burst Type）:选择Sequential</p>
+
+<p>输出强度（ODI）:可以选择RZQ/6 （40欧姆）或RZQ/7（34欧姆）。</p>
+
+<p>片选（CS#）: 在多个RANK时使用CS#，选择Enable。单个RANK时可以选择Disable,可以节省FPGA管脚。</p>
+
+<p>RTT（ODT）,选择RZQ/4（60欧姆）或RZQ/6（40欧姆）。</p>
+
+<p>地址映射顺序，选择ROW+BANK+COLLUM</p>
+
+<p><img src="image-13.png" alt="alt text" /></p>
+
+<p>点击Next</p>
+
+<p><img src="image-14.png" alt="alt text" /></p>
+
+<p>如图设置如下：</p>
+
+<p>System Clock: DDR 控制器输入时钟设置，可以外接到FPGA管脚的输入时钟，此时可以选择差分（Differential ）, 单端（Single End）。如果选择FPGA内部PLL的输出作为DDR控制器的输入管脚，此时应该选择No Buffer，因为PLL的输出已经有全局时钟驱动。</p>
+
+<p>参考时钟（Reference Clock），该时钟主要用来调整与DDR相连的FPGA管脚的输入模块延时的矫正，一般为200MHz，细节可以参考FPGA输入延时相关的文章。由于参考时钟也是 来自FPGA内部PLL，因此选择No Buffer。</p>
+
+<p>复位脚极性，根据DDR3资料，DDR3的复位脚低电平有效，因此选择Active Low。</p>
+
+<p>调试选项，这里选择OFF。</p>
+
+<p>内部参考电压（Internal Ref），这个选项是指FPGA对应BANK参考电压选项，可以使用内部的参考电压生成器，也可以使用外部参考电压。当DDR时钟超过400MHz，一定要选择外部提供的参考时钟，以降低参考时钟的噪声。本例恰好400Mhz，因此选择内部参考时钟。</p>
+
+<p>O功耗降低，选择该项为“ON”可以IO的功耗。就是在非读期间关闭DQ/DQS的输入Buffer，以及FPGA端的终端匹配电阻（RTT）。</p>
+
+<p>XADC, FPGA 内部的ADC，可以使能或非使能。</p>
+
+<p>下一步Next</p>
+
+<p><img src="image-15.png" alt="alt text" /></p>
+
+<p>下一步Next</p>
+
+<p>对照硬件连接分配引脚，出现错误</p>
+
+<p>ERROR : Address ports can be allocated to non memory byte group pins (not in T0, T1, T2, or T3) if and only if its adjacent byte is non Data byte group (i.e either Address/Control or empty) and it should contain at least one unallocated pin or allocated with memory clock pair. Refer to UG586 and AR# 45588 for more information.</p>
+
+<p><img src="image-16.png" alt="alt text" /></p>
+
+<p>不确定是不是此开发板DDR3的设计错误</p>
+
+<p><img src="image-17.png" alt="alt text" /></p>
+
+<p>先采用新设计创建IP，再将IO Ports改为硬件对应连接，Implementation出现Implementation Complete，Failed Nets!</p>
+
+<p><img src="image-18.png" alt="alt text" /></p>
+
+<p>暂时还没能解决 [07_11_2024]</p>]]></content><author><name>Meve</name></author><category term="FPGA" /><category term="IP" /><category term="FPGA" /><summary type="html"><![CDATA[FPGA DDR3控制器]]></summary></entry><entry><title type="html">flameshot，平替snipaste</title><link href="http://localhost:4000/flame-shot/" rel="alternate" type="text/html" title="flameshot，平替snipaste" /><published>2024-06-28T19:20:00+07:00</published><updated>2024-06-28T19:20:00+07:00</updated><id>http://localhost:4000/flame-shot</id><content type="html" xml:base="http://localhost:4000/flame-shot/"><![CDATA[<h3 id="前言">前言</h3>
 
 <p>snipaste是我在win上经常用到的一个截图软件，操作方便，贴图功能也很便利。 <br />
 由于现在我更多使用linux，便想寻找一个替代品，而flameshot，则是目前我认为linux上最好用的截图软件。 <br />

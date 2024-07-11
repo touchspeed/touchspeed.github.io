@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "unrar in rocky linux",
+      "description" : "",
+      "tags"     : "Linux",
+      "url"      : "/linux-rar/",
+      "date"     : "2024-07-06 15:28:00 +0700"
+    } ,
+  
+    {
       "title"    : "部分工作内容展示",
       "description" : "",
       "tags"     : "JOB",
@@ -9,7 +17,7 @@
     } ,
   
     {
-      "title"    : "ddr3 mig",
+      "title"    : "Xilinx FPGA ddr3 MIG 控制器",
       "description" : "",
       "tags"     : "IP, FPGA",
       "url"      : "/ddr3-mig/",
