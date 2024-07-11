@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-11T17:35:25+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">rpm update wps</title><link href="http://localhost:4000/rpm-update-wps/" rel="alternate" type="text/html" title="rpm update wps" /><published>2024-07-11T16:50:00+07:00</published><updated>2024-07-11T16:50:00+07:00</updated><id>http://localhost:4000/rpm-update-wps</id><content type="html" xml:base="http://localhost:4000/rpm-update-wps/"><![CDATA[<h2 id="前言">前言</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-11T17:48:20+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">rpm update wps</title><link href="http://localhost:4000/rpm-update-wps/" rel="alternate" type="text/html" title="rpm update wps" /><published>2024-07-11T16:50:00+07:00</published><updated>2024-07-11T16:50:00+07:00</updated><id>http://localhost:4000/rpm-update-wps</id><content type="html" xml:base="http://localhost:4000/rpm-update-wps/"><![CDATA[<h2 id="前言">前言</h2>
 
 <p>今天使用rocky时，发现wps有更新，每次打开都提示，那就更新一下吧。</p>
 
@@ -23,9 +23,8 @@
 <p>更新应用，使用rpm -Uvh</p>]]></content><author><name>Meve</name></author><category term="Linux" /><category term="Linux" /><category term="Tips" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">Conv Basic</title><link href="http://localhost:4000/conv-basic/" rel="alternate" type="text/html" title="Conv Basic" /><published>2024-07-11T15:47:00+07:00</published><updated>2024-07-11T15:47:00+07:00</updated><id>http://localhost:4000/conv-basic</id><content type="html" xml:base="http://localhost:4000/conv-basic/"><![CDATA[<p>等待总结</p>
 
 <p>浅显易懂的说明<br />
-<a href="https://zhuanlan.zhihu.com/p/694356231">卷积运算扫盲学习-硬件基础</a></p>
-
-<p><a href="https://animatedai.github.io/">animatedai</a></p>]]></content><author><name>Meve</name></author><summary type="html"><![CDATA[等待总结]]></summary></entry><entry><title type="html">unrar on rocky linux</title><link href="http://localhost:4000/linux-rar/" rel="alternate" type="text/html" title="unrar on rocky linux" /><published>2024-07-06T15:28:00+07:00</published><updated>2024-07-06T15:28:00+07:00</updated><id>http://localhost:4000/linux-rar</id><content type="html" xml:base="http://localhost:4000/linux-rar/"><![CDATA[<h2 id="前言">前言</h2>
+<a href="https://zhuanlan.zhihu.com/p/694356231">卷积运算扫盲学习-硬件基础</a><br />
+<a href="https://animatedai.github.io/">animatedai</a><br /></p>]]></content><author><name>Meve</name></author><summary type="html"><![CDATA[等待总结]]></summary></entry><entry><title type="html">unrar on rocky linux</title><link href="http://localhost:4000/linux-rar/" rel="alternate" type="text/html" title="unrar on rocky linux" /><published>2024-07-06T15:28:00+07:00</published><updated>2024-07-06T15:28:00+07:00</updated><id>http://localhost:4000/linux-rar</id><content type="html" xml:base="http://localhost:4000/linux-rar/"><![CDATA[<h2 id="前言">前言</h2>
 
 <p>有一些rar文件需要解压，由于不需要rar压缩功能，所以我选择安装免费版。<br />
 在 Linux 上使用的 unrar 工具有两种版本：一个是免费版本，另一个是商业版本。免费版本有一些限制，主要是它只能解压 RAR 文件，而不能创建 RAR 文件。</p>
@@ -294,15 +293,18 @@ LPDDR3:是一种用在移动设备上的功耗更低，体积更小的器件，�
 
 <p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-16.png" alt="alt text" /></p>
 
-<p>不确定是不是此开发板DDR3的设计错误</p>
+<p>不确定是不是此开发板DDR3的设计错误，能否绕过</p>
 
 <p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-17.png" alt="alt text" /></p>
 
-<p>先采用新设计创建IP，再将IO Ports改为硬件对应连接，Implementation出现Implementation Complete，Failed Nets!</p>
+<p>这一步先选另一个选项，先以新设计方式创建IP，再手动将IO Ports改为硬件对应引脚连接，Implementation出现Implementation Complete，Failed Nets!</p>
 
 <p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-02-ddr3-mig/image-18.png" alt="alt text" /></p>
 
-<p>暂时还没能解决 [07_11_2024]</p>]]></content><author><name>Meve</name></author><category term="FPGA" /><category term="IP" /><category term="FPGA" /><summary type="html"><![CDATA[FPGA DDR3控制器]]></summary></entry><entry><title type="html">flameshot，平替snipaste</title><link href="http://localhost:4000/flame-shot/" rel="alternate" type="text/html" title="flameshot，平替snipaste" /><published>2024-06-28T19:20:00+07:00</published><updated>2024-06-28T19:20:00+07:00</updated><id>http://localhost:4000/flame-shot</id><content type="html" xml:base="http://localhost:4000/flame-shot/"><![CDATA[<h3 id="前言">前言</h3>
+<p>只能找到两个相关的帖子，没什么有用的信息，等查log再试试
+<a href="https://support.xilinx.com/s/question/0D52E00007G0t4ZSAR/vivado-20183-nets-failed?language=en_US">vivado 2018.3 nets failed</a>
+<a href="https://support.xilinx.com/s/question/0D52E00006iHs53SAC/vivado-20142-failed-nets?language=en_US">Vivado 2014.2 Failed nets</a>
+暂时还没能解决 [07_11_2024]</p>]]></content><author><name>Meve</name></author><category term="FPGA" /><category term="IP" /><category term="FPGA" /><summary type="html"><![CDATA[FPGA DDR3控制器]]></summary></entry><entry><title type="html">flameshot，平替snipaste</title><link href="http://localhost:4000/flame-shot/" rel="alternate" type="text/html" title="flameshot，平替snipaste" /><published>2024-06-28T19:20:00+07:00</published><updated>2024-06-28T19:20:00+07:00</updated><id>http://localhost:4000/flame-shot</id><content type="html" xml:base="http://localhost:4000/flame-shot/"><![CDATA[<h3 id="前言">前言</h3>
 
 <p>snipaste是我在win上经常用到的一个截图软件，操作方便，贴图功能也很便利。 <br />
 由于现在我更多使用linux，便想寻找一个替代品，而flameshot，则是目前我认为linux上最好用的截图软件。 <br />
