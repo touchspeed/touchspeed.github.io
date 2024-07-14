@@ -1,6 +1,6 @@
 ---
 layout: post
-title: flameshot，平替snipaste
+title: flameshot，平替 snipaste
 date: 2024-06-28 19:20
 category: Linux
 author: Meve

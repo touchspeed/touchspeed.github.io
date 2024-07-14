@@ -1,0 +1,25 @@
+I"�<p>为博客添加评论系统 - valine</p>
+
+<h2 id="准备">准备</h2>
+
+<p>首先按照<a href="https://valine.js.org/quickstart.html">valine官方说明</a>注册LeanCloud帐号获取AppID和AppKey</p>
+
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-14-jekyll-add-valine-comment/1.png" alt="alt text" /></p>
+
+<h2 id="开始">开始</h2>
+
+<p>我的博客页面样式文件是_layouts/post.html文件，评论样式文件是_include\valine.html文件</p>
+
+<p>先在_include\文件夹创建valine.html
+<img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-14-jekyll-add-valine-comment/image.png" alt="alt text" /></p>
+
+<p>然后在_config.yml添加以下变量内容</p>
+
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-14-jekyll-add-valine-comment/image-1.png" alt="alt text" /></p>
+
+<p>然后在需要开启评论的页面样式文件中合适位置添加调用valine评论系统，例如_layouts/post.html</p>
+
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-14-jekyll-add-valine-comment/2.png" alt="alt text" /></p>
+
+<h2 id="结束">结束</h2>
+:ET

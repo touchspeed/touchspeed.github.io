@@ -1,0 +1,12 @@
+{% if site.valine_comment.enable %}
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<div id="vcomments"></div>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: '{{ site.valine_comment.leancloud_appid }}',
+        appKey: '{{ site.valine_comment.leancloud_appkey }}',
+        placeholder:'{{ site.valine_comment.placeholder }}'
+    })
+</script>
+{% endif %}
