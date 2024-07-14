@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-14T15:51:11+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">为 Jekyll 添加 Valine 评论系统</title><link href="http://localhost:4000/jekyll-add-valine-comment/" rel="alternate" type="text/html" title="为 Jekyll 添加 Valine 评论系统" /><published>2024-07-14T13:20:00+07:00</published><updated>2024-07-14T13:20:00+07:00</updated><id>http://localhost:4000/jekyll-add-valine-comment</id><content type="html" xml:base="http://localhost:4000/jekyll-add-valine-comment/"><![CDATA[<p>为博客添加评论系统 - valine</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-14T16:15:57+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">为 Jekyll 添加 Valine 评论系统</title><link href="http://localhost:4000/jekyll-add-valine-comment/" rel="alternate" type="text/html" title="为 Jekyll 添加 Valine 评论系统" /><published>2024-07-14T13:20:00+07:00</published><updated>2024-07-14T13:20:00+07:00</updated><id>http://localhost:4000/jekyll-add-valine-comment</id><content type="html" xml:base="http://localhost:4000/jekyll-add-valine-comment/"><![CDATA[<p>为博客添加评论系统 - valine</p>
 
 <h2 id="准备">准备</h2>
 
@@ -21,7 +21,13 @@
 
 <p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-14-jekyll-add-valine-comment/2.png" alt="alt text" /></p>
 
-<h2 id="结束">结束</h2>]]></content><author><name>Meve</name></author><category term="Other" /><category term="Tips" /><summary type="html"><![CDATA[为博客添加评论系统 - valine]]></summary></entry><entry><title type="html">rocky 系统备份</title><link href="http://localhost:4000/rocky-system-backup/" rel="alternate" type="text/html" title="rocky 系统备份" /><published>2024-07-13T01:53:00+07:00</published><updated>2024-07-13T01:53:00+07:00</updated><id>http://localhost:4000/rocky-system-backup</id><content type="html" xml:base="http://localhost:4000/rocky-system-backup/"><![CDATA[<p>sudo lvscan</p>
+<h2 id="结束">结束</h2>]]></content><author><name>Meve</name></author><category term="Other" /><category term="Tips" /><summary type="html"><![CDATA[为博客添加评论系统 - valine]]></summary></entry><entry><title type="html">rocky 系统备份</title><link href="http://localhost:4000/rocky-system-backup/" rel="alternate" type="text/html" title="rocky 系统备份" /><published>2024-07-13T01:53:00+07:00</published><updated>2024-07-13T01:53:00+07:00</updated><id>http://localhost:4000/rocky-system-backup</id><content type="html" xml:base="http://localhost:4000/rocky-system-backup/"><![CDATA[<h2 id="lvm">LVM</h2>
+
+<p>Linux 并不稳定，在我觉得甚至安装、卸载一些软件、升级依赖就会导致系统崩掉，所以安全措施很重要</p>
+
+<p>本来打算用 lvm 开启系统快照</p>
+
+<p>sudo lvscan</p>
 
 <p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-13-rocky-system-backup/image.png" alt="alt text" /></p>
 
@@ -35,7 +41,13 @@
 
 <p>sudo lvcreate –size 20G –snapshot –name root_snap07132024 /dev/rl/root</p>
 
-<p>sudo dnf install timeshift</p>]]></content><author><name>Meve</name></author><category term="Linux" /><category term="Linux" /><category term="Tips" /><summary type="html"><![CDATA[sudo lvscan]]></summary></entry><entry><title type="html">rpm update wps</title><link href="http://localhost:4000/rpm-update-wps/" rel="alternate" type="text/html" title="rpm update wps" /><published>2024-07-11T16:50:00+07:00</published><updated>2024-07-11T16:50:00+07:00</updated><id>http://localhost:4000/rpm-update-wps</id><content type="html" xml:base="http://localhost:4000/rpm-update-wps/"><![CDATA[<h2 id="前言">前言</h2>
+<p>执行发现硬盘剩余未分配空间太小，无法创建快照卷</p>
+
+<h2 id="timeshift">Timeshift</h2>
+
+<p>最后选择用 Timeshift</p>
+
+<p>sudo dnf install timeshift</p>]]></content><author><name>Meve</name></author><category term="Linux" /><category term="Linux" /><category term="Tips" /><summary type="html"><![CDATA[LVM]]></summary></entry><entry><title type="html">rpm update wps</title><link href="http://localhost:4000/rpm-update-wps/" rel="alternate" type="text/html" title="rpm update wps" /><published>2024-07-11T16:50:00+07:00</published><updated>2024-07-11T16:50:00+07:00</updated><id>http://localhost:4000/rpm-update-wps</id><content type="html" xml:base="http://localhost:4000/rpm-update-wps/"><![CDATA[<h2 id="前言">前言</h2>
 
 <p>今天使用rocky时，发现wps有更新，每次打开都提示，那就更新一下吧。</p>
 

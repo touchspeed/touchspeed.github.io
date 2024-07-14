@@ -1,0 +1,30 @@
+I"=<h2 id="lvm">LVM</h2>
+
+<p>Linux 并不稳定，在我觉得甚至安装、卸载一些软件、升级依赖就会导致系统崩掉，所以安全措施很重要</p>
+
+<p>本来打算用 lvm 开启系统快照</p>
+
+<p>sudo lvscan</p>
+
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-13-rocky-system-backup/image.png" alt="alt text" /></p>
+
+<p>sudo lvdisplay /dev/rl/root</p>
+
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-13-rocky-system-backup/image-1.png" alt="alt text" /></p>
+
+<p>df -h /dev/rl/root</p>
+
+<p><img src="https://raw.githubusercontent.com/touchspeed/touchspeed.github.io/main/_posts/2024-07-13-rocky-system-backup/image-2.png" alt="alt text" /></p>
+
+<p>sudo lvcreate –size 20G –snapshot –name root_snap07132024 /dev/rl/root</p>
+
+<p>最后执行发现硬盘剩余未分配空间太小，无法创建快照卷</p>
+
+<h2 id="timeshift">Timeshift</h2>
+
+<p>最后选择用 Timeshift</p>
+
+<p>sudo dnf install timeshift</p>
+
+<p>可以用dd，直接tar压缩或在</p>
+:ET
