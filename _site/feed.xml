@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-14T16:15:57+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">为 Jekyll 添加 Valine 评论系统</title><link href="http://localhost:4000/jekyll-add-valine-comment/" rel="alternate" type="text/html" title="为 Jekyll 添加 Valine 评论系统" /><published>2024-07-14T13:20:00+07:00</published><updated>2024-07-14T13:20:00+07:00</updated><id>http://localhost:4000/jekyll-add-valine-comment</id><content type="html" xml:base="http://localhost:4000/jekyll-add-valine-comment/"><![CDATA[<p>为博客添加评论系统 - valine</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-14T16:25:18+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">为 Jekyll 添加 Valine 评论系统</title><link href="http://localhost:4000/jekyll-add-valine-comment/" rel="alternate" type="text/html" title="为 Jekyll 添加 Valine 评论系统" /><published>2024-07-14T13:20:00+07:00</published><updated>2024-07-14T13:20:00+07:00</updated><id>http://localhost:4000/jekyll-add-valine-comment</id><content type="html" xml:base="http://localhost:4000/jekyll-add-valine-comment/"><![CDATA[<p>为博客添加评论系统 - valine</p>
 
 <h2 id="准备">准备</h2>
 
@@ -23,7 +23,7 @@
 
 <h2 id="结束">结束</h2>]]></content><author><name>Meve</name></author><category term="Other" /><category term="Tips" /><summary type="html"><![CDATA[为博客添加评论系统 - valine]]></summary></entry><entry><title type="html">rocky 系统备份</title><link href="http://localhost:4000/rocky-system-backup/" rel="alternate" type="text/html" title="rocky 系统备份" /><published>2024-07-13T01:53:00+07:00</published><updated>2024-07-13T01:53:00+07:00</updated><id>http://localhost:4000/rocky-system-backup</id><content type="html" xml:base="http://localhost:4000/rocky-system-backup/"><![CDATA[<h2 id="lvm">LVM</h2>
 
-<p>Linux 并不稳定，在我觉得甚至安装、卸载一些软件、升级依赖就会导致系统崩掉，所以安全措施很重要</p>
+<p>Linux 并不稳定，在我觉得甚至安装、卸载一些软件、升级依赖、更新系统就会导致系统崩掉，所以安全措施很重要</p>
 
 <p>本来打算用 lvm 开启系统快照</p>
 
