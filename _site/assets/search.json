@@ -1,6 +1,22 @@
 [
   
     {
+      "title"    : "Learn I2c",
+      "description" : "",
+      "tags"     : "Protocal",
+      "url"      : "/learn-i2c/",
+      "date"     : "2024-07-16 01:45:00 +0700"
+    } ,
+  
+    {
+      "title"    : "记一次 rm -rf 误删数据的恢复",
+      "description" : "",
+      "tags"     : "Linux, Tips",
+      "url"      : "/restore-rm-data/",
+      "date"     : "2024-07-15 16:44:00 +0700"
+    } ,
+  
+    {
       "title"    : "为 Jekyll 添加 Valine 评论系统",
       "description" : "",
       "tags"     : "Tips",

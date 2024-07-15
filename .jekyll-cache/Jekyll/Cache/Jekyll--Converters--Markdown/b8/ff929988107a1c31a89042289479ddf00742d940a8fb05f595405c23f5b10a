@@ -1,0 +1,32 @@
+I"<h2 id="前言">前言</h2>
+
+<p>之前把电脑装的Windows+Linux双系统，由于最近在搞系统备份and现在基本不怎么用win了，便想把win的系统盘数据整理下格式化当系统盘。
+由于文件比较多，有个文件夹和另一个无用文件夹名字相似，没仔细看就rm -rf了，事后发现删错了。</p>
+
+<h2 id="恢复">恢复</h2>
+
+<p>这里我使用了testdisk, 还有一个extundelete但是不支持win的ntfs文件系统</p>
+
+<p>sudo dnf install testdisk</p>
+
+<p>先使用df -h找到需要恢复的挂载点
+<img src="image-1.png" alt="alt text" /></p>
+
+<p>sudo photorec /dev/nvme0n1p2
+<img src="image-1.png" alt="alt text" /></p>
+
+<p><img src="image-2.png" alt="alt text" /></p>
+
+<p><img src="image-3.png" alt="alt text" /></p>
+
+<p><img src="image-4.png" alt="alt text" /></p>
+
+<p>这一步选择需要保存的位置
+<img src="image-5.png" alt="alt text" /></p>
+
+<p>等待恢复
+<img src="rec1.png" alt="alt text" /></p>
+
+<p>挂了一晚跑完了
+<img src="rec2.png" alt="alt text" /></p>
+:ET
