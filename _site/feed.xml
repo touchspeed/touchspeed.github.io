@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-16T01:49:04+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">记一次 rm -rf 误删数据的恢复</title><link href="http://localhost:4000/restore-rm-data/" rel="alternate" type="text/html" title="记一次 rm -rf 误删数据的恢复" /><published>2024-07-15T16:44:00+07:00</published><updated>2024-07-15T16:44:00+07:00</updated><id>http://localhost:4000/restore-rm-data</id><content type="html" xml:base="http://localhost:4000/restore-rm-data/"><![CDATA[<h2 id="前言">前言</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-16T13:04:42+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meve’s blog</title><subtitle>Hello  World</subtitle><author><name>Meve</name></author><entry><title type="html">记一次 rm -rf 误删数据的恢复</title><link href="http://localhost:4000/restore-rm-data/" rel="alternate" type="text/html" title="记一次 rm -rf 误删数据的恢复" /><published>2024-07-15T16:44:00+07:00</published><updated>2024-07-15T16:44:00+07:00</updated><id>http://localhost:4000/restore-rm-data</id><content type="html" xml:base="http://localhost:4000/restore-rm-data/"><![CDATA[<h2 id="前言">前言</h2>
 
 <p>随便写的</p>
 
-<p>之前把电脑装的Windows+Linux双系统，由于最近在搞系统备份and现在基本不怎么用win了，便想把win的系统盘数据整理下格式化当系统盘。<br />
+<p>之前把电脑装的Windows+Linux双系统，由于最近在搞系统备份and现在基本不怎么用win了，便想把win的系统盘数据整理下格式化当备份盘使用。<br />
 由于文件比较多，有个文件夹和另一个无用文件夹名字相似，没仔细看就rm -rf了，事后发现删错了。<br /></p>
 
 <h2 id="恢复">恢复</h2>
